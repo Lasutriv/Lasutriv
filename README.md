@@ -10,6 +10,8 @@ Some information about me:
 - 💬 Ask me about my 2D RTS game or my fully dockerized home app similar to Home Assistant.
 - 📫 How to reach me: [Dev Email](mailto:dev.lasutriv@gmail.com)\
 
+Do note: GitHub stats and top languages does not take into account private repositorities or all projects that I have worked on.
+
 <!--
 **Lasutriv/Lasutriv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
