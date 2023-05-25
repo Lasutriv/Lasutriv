@@ -6,7 +6,7 @@ Some information about me:
 - 🔭 I’m currently working on some personal projects pertaining to my business and home.
   - [AIA](https://digimasteredworks.com/our-games/aia), a 2D RTS Game
   - [DMW Website](https://digimasteredworks.com/)
-  - HomeLife App
+  - [HomeLife App](https://github.com/Lasutriv/HomeLifePublic)
 - 💬 Ask me about my 2D RTS game or my fully dockerized home app similar to Home Assistant.
 - 📫 How to reach me: [Dev Email](mailto:dev.lasutriv@gmail.com)
 
