@@ -8,7 +8,7 @@ Some information about me:
   - [DMW Website](https://digimasteredworks.com/)
   - [HomeLife App](https://github.com/Lasutriv/HomeLifePublic)
 - 💬 Ask me about my 2D RTS game or my fully dockerized home app similar to Home Assistant.
-- 📫 How to reach me: [Dev Email](mailto:dev.lasutriv@gmail.com)
+- 📫 How to reach me: [Dev Email](mailto:dev.lasutriv@gmail.com) | [Personal Email](mailto:tannerf1101@yahoo.com)
 
 Here's a showcase video of all of my work that has taken place for AIA in 2022:
 https://github.com/Lasutriv/Lasutriv/assets/4943212/94c30bb3-68fa-4a73-a01d-20fc29d1e0cf
