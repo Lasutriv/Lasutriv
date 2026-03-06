@@ -5,14 +5,21 @@
 
 Some information about me:
 
-- 🔭 I’m currently working on some personal projects pertaining to my business and home.
-  - [AIA](https://digimasteredworks.com/our-games/aia), a 2D RTS Game
-  - [DMW Website](https://digimasteredworks.com/)
-  - [HomeLife App](https://github.com/Lasutriv/HomeLifePublic)
-- 💬 Ask me about my 2D RTS game or my fully dockerized home app similar to Home Assistant.
+- 🔭 **Currently building:**
+  - [AIA](https://digimasteredworks.com/our-games/aia) — A 2D top-down strategy/RPG set in 2054. Direct an intelligence agency in a post-catastrophe world with Cold War espionage aesthetics. Built with Unity 6 & URP.
+  - [AIA-Evolve](https://github.com/DigiMastered-Works-LLC/ai-aia-source/wiki) — An autonomous AI agent (Claude Code) that evolves the AIA game every hour — reading the backlog, writing C#, validating, committing, and publishing wiki updates without human intervention.
+  - [DMW Website](https://digimasteredworks.com/) — DigiMastered Works LLC company site
+  - [HomeLife App](https://github.com/Lasutriv/HomeLifePublic) — Fully dockerized home management app
+
+- 🤖 **AI-powered game development:** AIA is being autonomously developed by an AI agent running on GitHub Actions. Community members can file issues labeled `agent-input` and the bot picks them up, implements changes, and closes the issue. [Watch it work →](https://github.com/DigiMastered-Works-LLC/ai-aia-source/wiki/Evolution-Log)
+
+- 💬 Ask me about autonomous AI agents in game dev, Unity 2D strategy games, or dockerized home automation.
 - 📫 How to reach me: [Email](mailto:tannerf1101@yahoo.com)
 
-Here's a showcase video of all of my work that has taken place for AIA in 2022:
+---
+
+**AIA Showcase (2022):**
+
 https://github.com/Lasutriv/Lasutriv/assets/4943212/94c30bb3-68fa-4a73-a01d-20fc29d1e0cf
 
-Do note: GitHub stats and top languages do not take into account private repositorities or all projects that I have worked on.
+> *Note: GitHub stats and top languages do not account for private repositories or all projects I've worked on.*
