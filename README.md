@@ -1,8 +1,7 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Personnel file for codename LASUTRIV, stamped DECLASSIFIED. Role: game developer, Unity 2D strategy. Current op: AIA, an intelligence-agency RPG set in 2054. Field asset: AIA-Evolve, an AI agent that ships code hourly." />
+<img src="assets/header.svg" width="100%" alt="Personnel file for codename LASUTRIV, stamped DECLASSIFIED, over a sonar sweep. Role: game developer working with autonomous AI agents. Latest ops: Monarchy and New Roots. Field asset: AIA-Evolve, an AI agent that ships code hourly." />
 
-<a href="https://digimasteredworks.com/"><img alt="HQ: digimasteredworks.com" src="https://img.shields.io/badge/HQ-digimasteredworks.com-f5a524?style=for-the-badge&labelColor=161b22" /></a>
 <a href="mailto:tannerf1101@yahoo.com"><img alt="Comms: email me" src="https://img.shields.io/badge/Comms-Email_me-f5a524?style=for-the-badge&labelColor=161b22" /></a>
 <a href="https://github.com/DigiMastered-Works-LLC/ai-aia-source/wiki/Evolution-Log"><img alt="Intel: AIA-Evolve log" src="https://img.shields.io/badge/Intel-AIA--Evolve_log-f5a524?style=for-the-badge&labelColor=161b22" /></a>
 
@@ -14,11 +13,11 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🎮 [AIA](https://digimasteredworks.com/our-games/aia)
+### 🎮 AIA
 
 `UNITY 6` `URP` `C#`
 
-A 2D top-down strategy/RPG set in **2054**. Direct an intelligence agency in a post-catastrophe world with Cold War espionage aesthetics.
+A 3D low-poly strategy/RPG set in **2054**. Direct an intelligence agency in a post-catastrophe world with Cold War espionage aesthetics.
 
 </td>
 <td width="50%" valign="top">
@@ -32,16 +31,7 @@ An autonomous AI agent that evolves AIA **every hour**: reading the backlog, wri
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### 🌐 [DMW Website](https://digimasteredworks.com/)
-
-`COMPANY SITE`
-
-Home of DigiMastered Works LLC, the studio behind AIA.
-
-</td>
-<td width="50%" valign="top">
+<td colspan="2" valign="top">
 
 ### 🏠 [HomeLife App](https://github.com/Lasutriv/HomeLifePublic)
 
@@ -85,7 +75,7 @@ https://github.com/Lasutriv/Lasutriv/assets/4943212/94c30bb3-68fa-4a73-a01d-20fc
 
 ## 📫 Establish contact
 
-💬 Ask me about **autonomous AI agents in game dev**, **Unity 2D strategy games**, or **dockerized home automation**.<br />
-📨 Reach me by [email](mailto:tannerf1101@yahoo.com) or through [DigiMastered Works](https://digimasteredworks.com/).
+💬 Ask me about **autonomous AI agents in game dev**, **3D low-poly games**, or **dockerized home automation**.<br />
+📨 Reach me by [email](mailto:tannerf1101@yahoo.com).
 
 <img src="assets/footer.svg" width="100%" alt="End of file" />

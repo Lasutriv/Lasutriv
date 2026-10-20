@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="t d">
   <title id="t">LASUTRIV — personnel file</title>
-  <desc id="d">Codename Lasutriv. Role: game developer, Unity 2D strategy. Current op: AIA, an intelligence-agency RPG set in 2054. Field asset: AIA-Evolve, an AI agent that ships code hourly. Status: declassified.</desc>
+  <desc id="d">Codename Lasutriv. Role: game developer working with autonomous AI agents. Latest ops: Monarchy and New Roots. Field asset: AIA-Evolve, an AI agent that ships code hourly. Status: declassified.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0b1016"/>
@@ -22,10 +22,6 @@
       <rect width="6" height="6" fill="#020304"/>
       <rect width="2" height="6" fill="#ffffff" fill-opacity=".04"/>
     </pattern>
-    <radialGradient id="scope" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#f5a524" stop-opacity=".10"/>
-      <stop offset="1" stop-color="#f5a524" stop-opacity=".02"/>
-    </radialGradient>
     <radialGradient id="glow" cx=".5" cy=".5" r=".5">
       <stop offset="0" stop-color="#f5a524" stop-opacity=".10"/>
       <stop offset="1" stop-color="#f5a524" stop-opacity="0"/>
@@ -40,9 +36,9 @@
       <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="type0"><rect x="54" y="241" width="0" height="29"><animate attributeName="width" values="0;11.6;23.2;34.8;46.4;58;69.6;81.2;92.8;104.4;116;127.6;139.2;150.8;162.4;174;185.6;197.2;208.8;220.4;232;243.6;255.2;266.8;278.4;290;301.6;313.2;324.8;336.4;348;359.6;371.2;382.8;394.4;406;417.6;429.2;440.8;452.4;464;475.6;487.2;498.8;510.4;522;533.6;545.2;556.8;568.4" begin="1.25s" dur="1.47s" calcMode="discrete" fill="freeze"/></rect></clipPath>
-    <clipPath id="type1"><rect x="54" y="275" width="0" height="29"><animate attributeName="width" values="0;11.6;23.2;34.8;46.4;58;69.6;81.2;92.8;104.4;116;127.6;139.2;150.8;162.4;174;185.6;197.2;208.8;220.4;232;243.6;255.2;266.8;278.4;290;301.6;313.2;324.8;336.4;348;359.6;371.2;382.8;394.4;406;417.6;429.2;440.8;452.4;464;475.6;487.2;498.8;510.4;522;533.6;545.2;556.8;568.4;580;591.6;603.2;614.8;626.4;638;649.6;661.2;672.8;684.4" begin="3.02s" dur="1.77s" calcMode="discrete" fill="freeze"/></rect></clipPath>
-    <clipPath id="type2"><rect x="54" y="309" width="0" height="29"><animate attributeName="width" values="0;11.6;23.2;34.8;46.4;58;69.6;81.2;92.8;104.4;116;127.6;139.2;150.8;162.4;174;185.6;197.2;208.8;220.4;232;243.6;255.2;266.8;278.4;290;301.6;313.2;324.8;336.4;348;359.6;371.2;382.8;394.4;406;417.6;429.2;440.8;452.4;464;475.6;487.2;498.8;510.4;522;533.6;545.2;556.8;568.4;580;591.6;603.2;614.8;626.4;638;649.6;661.2;672.8;684.4;696;707.6" begin="5.09s" dur="1.83s" calcMode="discrete" fill="freeze"/></rect></clipPath>
+    <clipPath id="type0"><rect x="54" y="241" width="0" height="29"><animate attributeName="width" values="0;11.6;23.2;34.8;46.4;58;69.6;81.2;92.8;104.4;116;127.6;139.2;150.8;162.4;174;185.6;197.2;208.8;220.4;232;243.6;255.2;266.8;278.4;290;301.6;313.2;324.8;336.4;348;359.6;371.2;382.8;394.4;406;417.6;429.2;440.8;452.4;464;475.6;487.2;498.8;510.4;522;533.6;545.2;556.8;568.4;580;591.6;603.2" begin="1.25s" dur="1.56s" calcMode="discrete" fill="freeze"/></rect></clipPath>
+    <clipPath id="type1"><rect x="54" y="275" width="0" height="29"><animate attributeName="width" values="0;11.6;23.2;34.8;46.4;58;69.6;81.2;92.8;104.4;116;127.6;139.2;150.8;162.4;174;185.6;197.2;208.8;220.4;232;243.6;255.2;266.8;278.4;290;301.6;313.2;324.8;336.4;348;359.6;371.2;382.8;394.4;406" begin="3.11s" dur="1.05s" calcMode="discrete" fill="freeze"/></rect></clipPath>
+    <clipPath id="type2"><rect x="54" y="309" width="0" height="29"><animate attributeName="width" values="0;11.6;23.2;34.8;46.4;58;69.6;81.2;92.8;104.4;116;127.6;139.2;150.8;162.4;174;185.6;197.2;208.8;220.4;232;243.6;255.2;266.8;278.4;290;301.6;313.2;324.8;336.4;348;359.6;371.2;382.8;394.4;406;417.6;429.2;440.8;452.4;464;475.6;487.2;498.8;510.4;522;533.6;545.2;556.8;568.4;580;591.6;603.2;614.8;626.4;638;649.6;661.2;672.8;684.4;696;707.6" begin="4.46s" dur="1.83s" calcMode="discrete" fill="freeze"/></rect></clipPath>
   </defs>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace; white-space: pre; }
@@ -58,10 +54,10 @@
     .stamp { transform-box: fill-box; transform-origin: center;
               animation: stamp .45s cubic-bezier(.2, .9, .3, 1.2) .55s both; }
     .sweep { transform-box: fill-box; transform-origin: center;
-              animation: spin 4s linear infinite; }
-    .blip { opacity: .14; animation: blip 4s ease-out infinite; }
+              animation: spin 6s linear infinite; }
+    .blip { opacity: .1; animation: blip 6s ease-out infinite; }
     .ping { transform-box: fill-box; transform-origin: center; opacity: 0;
-             animation: ping 4s ease-out infinite; }
+             animation: ping 6s ease-out infinite; }
     @keyframes flicker {
       0% { opacity: 0; } 12% { opacity: .9; } 18% { opacity: .15; }
       30% { opacity: 1; } 36% { opacity: .45; } 48%, 100% { opacity: 1; } }
@@ -80,12 +76,12 @@
       70% { opacity: 1; transform: scale(.95); }
       100% { opacity: 1; transform: scale(1); } }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes blip { 0% { opacity: 1; } 65%, 100% { opacity: .14; } }
+    @keyframes blip { 0% { opacity: .95; } 65%, 100% { opacity: .1; } }
     @keyframes ping { 0% { opacity: .9; transform: scale(.6); }
                       45%, 100% { opacity: 0; transform: scale(3.2); } }
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
-      .blip { opacity: .7; }
+      .blip { opacity: .5; }
     }
   </style>
 
@@ -93,12 +89,35 @@
   <rect width="1200" height="400" fill="url(#bg)"/>
   <rect width="1200" height="400" fill="url(#grid)"/>
   <circle cx="1004" cy="206" r="260" fill="url(#glow)"/>
+  <rect width="1200" height="62" fill="#11161d"/>
+  <rect y="350" width="1200" height="50" fill="#11161d"/>
+
+  <!-- background sonar -->
+  <circle cx="1004" cy="206" r="120" fill="none" stroke="#f5a524" stroke-opacity="0.17"/>
+  <circle cx="1004" cy="206" r="240" fill="none" stroke="#f5a524" stroke-opacity="0.15"/>
+  <circle cx="1004" cy="206" r="360" fill="none" stroke="#f5a524" stroke-opacity="0.14"/>
+  <circle cx="1004" cy="206" r="480" fill="none" stroke="#f5a524" stroke-opacity="0.12"/>
+  <circle cx="1004" cy="206" r="600" fill="none" stroke="#f5a524" stroke-opacity="0.1"/>
+  <circle cx="1004" cy="206" r="720" fill="none" stroke="#f5a524" stroke-opacity="0.09"/>
+  <circle cx="1004" cy="206" r="840" fill="none" stroke="#f5a524" stroke-opacity="0.07"/>
+  <circle cx="1004" cy="206" r="960" fill="none" stroke="#f5a524" stroke-opacity="0.05"/>
+  <path d="M824 206H1184M1004 26V386" stroke="#f5a524" stroke-opacity=".12"/>
+  <path d="M1124 206L1115 206M1122.18 226.84L1118.24 226.14M1116.76 247.04L1113 245.67M1107.92 266L1100.13 261.5M1095.93 283.13L1092.86 280.56M1081.13 297.93L1078.56 294.86M1064 309.92L1059.5 302.13M1045.04 318.76L1043.67 315M1024.84 324.18L1024.14 320.24M1004 326L1004 317M983.16 324.18L983.86 320.24M962.96 318.76L964.33 315M944 309.92L948.5 302.13M926.87 297.93L929.44 294.86M912.07 283.13L915.14 280.56M900.08 266L907.87 261.5M891.24 247.04L895 245.67M885.82 226.84L889.76 226.14M884 206L893 206M885.82 185.16L889.76 185.86M891.24 164.96L895 166.33M900.08 146L907.87 150.5M912.07 128.87L915.14 131.44M926.87 114.07L929.44 117.14M944 102.08L948.5 109.87M962.96 93.24L964.33 97M983.16 87.82L983.86 91.76M1004 86L1004 95M1024.84 87.82L1024.14 91.76M1045.04 93.24L1043.67 97M1064 102.08L1059.5 109.87M1081.13 114.07L1078.56 117.14M1095.93 128.87L1092.86 131.44M1107.92 146L1100.13 150.5M1116.76 164.96L1113 166.33M1122.18 185.16L1118.24 185.86" stroke="#f5a524" stroke-opacity=".35"/>
+  <g transform="translate(1004 206)"><g class="sweep"><circle r="1060" fill="none"/><path d="M0 0L592.74 -878.78A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0016"/><path d="M0 0L639.56 -845.31A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0036"/><path d="M0 0L684.5 -809.36A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0052"/><path d="M0 0L727.42 -771.02A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0067"/><path d="M0 0L768.19 -730.4A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0080"/><path d="M0 0L806.7 -687.63A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0093"/><path d="M0 0L842.83 -642.84A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0105"/><path d="M0 0L876.47 -596.15A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0118"/><path d="M0 0L907.54 -547.7A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0130"/><path d="M0 0L935.92 -497.64A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0142"/><path d="M0 0L961.55 -446.11A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0155"/><path d="M0 0L984.35 -393.27A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0168"/><path d="M0 0L1004.24 -339.27A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0181"/><path d="M0 0L1021.17 -284.26A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0194"/><path d="M0 0L1035.1 -228.42A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0209"/><path d="M0 0L1045.97 -171.91A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0223"/><path d="M0 0L1053.76 -114.89A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0238"/><path d="M0 0L1058.44 -57.53A1060 1060 0 0 1 1060 0Z" fill="#f5a524" fill-opacity="0.0255"/><path d="M0 0H1060" stroke="#f5a524" stroke-opacity=".14" stroke-width="7"/><path d="M0 0H1060" stroke="#f5a524" stroke-opacity=".6" stroke-width="1.5"/></g></g>
+  <g style="animation-delay:3.76s" class="blip"><circle class="ping" cx="905" cy="104" r="5" fill="none" stroke="#f5a524" style="animation-delay:3.76s"/><circle cx="905" cy="104" r="3.5" fill="#f5a524"/></g>
+  <g style="animation-delay:5.28s" class="blip"><circle class="ping" cx="1094" cy="122" r="5" fill="none" stroke="#f5a524" style="animation-delay:5.28s"/><circle cx="1094" cy="122" r="3.5" fill="#f5a524"/></g>
+  <g style="animation-delay:0.54s" class="blip"><circle class="ping" cx="1126" cy="284" r="5" fill="none" stroke="#f5a524" style="animation-delay:0.54s"/><circle cx="1126" cy="284" r="3.5" fill="#f5a524"/></g>
+  <g style="animation-delay:2.11s" class="blip"><circle class="ping" cx="932" cy="304" r="5" fill="none" stroke="#f5a524" style="animation-delay:2.11s"/><circle cx="932" cy="304" r="3.5" fill="#f5a524"/></g>
+  <g style="animation-delay:2.48s" class="blip"><circle class="ping" cx="818" cy="318" r="5" fill="none" stroke="#f5a524" style="animation-delay:2.48s"/><circle cx="818" cy="318" r="3.5" fill="#f5a524"/></g>
+  <g style="animation-delay:2.94s" class="blip"><circle class="ping" cx="702" cy="226" r="5" fill="none" stroke="#f5a524" style="animation-delay:2.94s"/><circle cx="702" cy="226" r="3.5" fill="#f5a524"/></g>
+  <g style="animation-delay:3.18s" class="blip"><circle class="ping" cx="436" cy="98" r="5" fill="none" stroke="#f5a524" style="animation-delay:3.18s"/><circle cx="436" cy="98" r="3.5" fill="#f5a524"/></g>
+  <circle cx="1004" cy="206" r="9" fill="none" stroke="#f5a524" stroke-opacity=".5"/>
+  <circle cx="1004" cy="206" r="3.5" fill="#f5a524"/>
 
   <!-- top bar -->
-  <rect width="1200" height="62" fill="#11161d"/>
   <path d="M0 62H1200" stroke="#30363d"/>
   <circle class="blink" cx="62" cy="36" r="5" fill="#f5a524"/>
-  <text x="80" y="41" font-size="14" letter-spacing="3" fill="#8b949e" textLength="433.2" lengthAdjust="spacing">DIGIMASTERED WORKS  //  PERSONNEL FILE</text>
+  <text x="80" y="41" font-size="14" letter-spacing="3" fill="#8b949e" textLength="433.2" lengthAdjust="spacing">CLASSIFIED ARCHIVE  //  PERSONNEL FILE</text>
   <text x="1144" y="41" font-size="14" letter-spacing="3" fill="#8b949e" text-anchor="end" textLength="193.8" lengthAdjust="spacing">FILE 2054-LSV-001</text>
 
   <!-- codename -->
@@ -126,29 +145,14 @@
   </g>
 
   <!-- typed dossier lines -->
-  <text clip-path="url(#type0)" x="56" y="262" textLength="568.4" lengthAdjust="spacing" font-size="19"><tspan fill="#f5a524">› </tspan><tspan fill="#8b949e">ROLE         </tspan><tspan fill="#e6edf3">Game developer · Unity 2D strategy</tspan></text>
-  <rect class="cursor" x="56" y="246" width="10.6" height="21" fill="#f5a524" visibility="visible"><animate attributeName="x" values="56;67.6;79.2;90.8;102.4;114;125.6;137.2;148.8;160.4;172;183.6;195.2;206.8;218.4;230;241.6;253.2;264.8;276.4;288;299.6;311.2;322.8;334.4;346;357.6;369.2;380.8;392.4;404;415.6;427.2;438.8;450.4;462;473.6;485.2;496.8;508.4;520;531.6;543.2;554.8;566.4;578;589.6;601.2;612.8;624.4" begin="1.25s" dur="1.47s" calcMode="discrete" fill="freeze"/><set attributeName="visibility" to="hidden" begin="3.02s"/></rect>
-  <text clip-path="url(#type1)" x="56" y="296" textLength="684.4" lengthAdjust="spacing" font-size="19"><tspan fill="#f5a524">› </tspan><tspan fill="#8b949e">CURRENT OP   </tspan><tspan fill="#e6edf3">AIA — an intelligence-agency RPG set in 2054</tspan></text>
-  <rect class="cursor" x="56" y="280" width="10.6" height="21" fill="#f5a524" visibility="hidden"><animate attributeName="x" values="56;67.6;79.2;90.8;102.4;114;125.6;137.2;148.8;160.4;172;183.6;195.2;206.8;218.4;230;241.6;253.2;264.8;276.4;288;299.6;311.2;322.8;334.4;346;357.6;369.2;380.8;392.4;404;415.6;427.2;438.8;450.4;462;473.6;485.2;496.8;508.4;520;531.6;543.2;554.8;566.4;578;589.6;601.2;612.8;624.4;636;647.6;659.2;670.8;682.4;694;705.6;717.2;728.8;740.4" begin="3.02s" dur="1.77s" calcMode="discrete" fill="freeze"/><set attributeName="visibility" to="visible" begin="3.02s"/><set attributeName="visibility" to="hidden" begin="5.09s"/></rect>
+  <text clip-path="url(#type0)" x="56" y="262" textLength="603.2" lengthAdjust="spacing" font-size="19"><tspan fill="#f5a524">› </tspan><tspan fill="#8b949e">ROLE         </tspan><tspan fill="#e6edf3">Game developer · autonomous AI agents</tspan></text>
+  <rect class="cursor" x="56" y="246" width="10.6" height="21" fill="#f5a524" visibility="visible"><animate attributeName="x" values="56;67.6;79.2;90.8;102.4;114;125.6;137.2;148.8;160.4;172;183.6;195.2;206.8;218.4;230;241.6;253.2;264.8;276.4;288;299.6;311.2;322.8;334.4;346;357.6;369.2;380.8;392.4;404;415.6;427.2;438.8;450.4;462;473.6;485.2;496.8;508.4;520;531.6;543.2;554.8;566.4;578;589.6;601.2;612.8;624.4;636;647.6;659.2" begin="1.25s" dur="1.56s" calcMode="discrete" fill="freeze"/><set attributeName="visibility" to="hidden" begin="3.11s"/></rect>
+  <text clip-path="url(#type1)" x="56" y="296" textLength="406" lengthAdjust="spacing" font-size="19"><tspan fill="#f5a524">› </tspan><tspan fill="#8b949e">LATEST OPS   </tspan><tspan fill="#e6edf3">Monarchy · New Roots</tspan></text>
+  <rect class="cursor" x="56" y="280" width="10.6" height="21" fill="#f5a524" visibility="hidden"><animate attributeName="x" values="56;67.6;79.2;90.8;102.4;114;125.6;137.2;148.8;160.4;172;183.6;195.2;206.8;218.4;230;241.6;253.2;264.8;276.4;288;299.6;311.2;322.8;334.4;346;357.6;369.2;380.8;392.4;404;415.6;427.2;438.8;450.4;462" begin="3.11s" dur="1.05s" calcMode="discrete" fill="freeze"/><set attributeName="visibility" to="visible" begin="3.11s"/><set attributeName="visibility" to="hidden" begin="4.46s"/></rect>
   <text clip-path="url(#type2)" x="56" y="330" textLength="707.6" lengthAdjust="spacing" font-size="19"><tspan fill="#f5a524">› </tspan><tspan fill="#8b949e">FIELD ASSET  </tspan><tspan fill="#e6edf3">AIA-Evolve, an AI agent that ships code hourly</tspan></text>
-  <rect class="cursor" x="56" y="314" width="10.6" height="21" fill="#f5a524" visibility="hidden"><animate attributeName="x" values="56;67.6;79.2;90.8;102.4;114;125.6;137.2;148.8;160.4;172;183.6;195.2;206.8;218.4;230;241.6;253.2;264.8;276.4;288;299.6;311.2;322.8;334.4;346;357.6;369.2;380.8;392.4;404;415.6;427.2;438.8;450.4;462;473.6;485.2;496.8;508.4;520;531.6;543.2;554.8;566.4;578;589.6;601.2;612.8;624.4;636;647.6;659.2;670.8;682.4;694;705.6;717.2;728.8;740.4;752;763.6" begin="5.09s" dur="1.83s" calcMode="discrete" fill="freeze"/><set attributeName="visibility" to="visible" begin="5.09s"/></rect>
-
-  <!-- radar -->
-  <circle cx="1004" cy="206" r="124" fill="url(#scope)" stroke="#f5a524" stroke-opacity=".55" stroke-width="1.5"/>
-  <circle cx="1004" cy="206" r="82.67" fill="none" stroke="#f5a524" stroke-opacity=".18"/>
-  <circle cx="1004" cy="206" r="41.33" fill="none" stroke="#f5a524" stroke-opacity=".18"/>
-  <path d="M880 206H1128M1004 82V330" stroke="#f5a524" stroke-opacity=".14"/>
-  <path d="M1128 206L1118 206M1126.12 227.53L1121.19 226.66M1120.52 248.41L1115.82 246.7M1111.39 268L1102.73 263M1098.99 285.71L1095.16 282.49M1083.71 300.99L1080.49 297.16M1066 313.39L1061 304.73M1046.41 322.52L1044.7 317.82M1025.53 328.12L1024.66 323.19M1004 330L1004 320M982.47 328.12L983.34 323.19M961.59 322.52L963.3 317.82M942 313.39L947 304.73M924.29 300.99L927.51 297.16M909.01 285.71L912.84 282.49M896.61 268L905.27 263M887.48 248.41L892.18 246.7M881.88 227.53L886.81 226.66M880 206L890 206M881.88 184.47L886.81 185.34M887.48 163.59L892.18 165.3M896.61 144L905.27 149M909.01 126.29L912.84 129.51M924.29 111.01L927.51 114.84M942 98.61L947 107.27M961.59 89.48L963.3 94.18M982.47 83.88L983.34 88.81M1004 82L1004 92M1025.53 83.88L1024.66 88.81M1046.41 89.48L1044.7 94.18M1066 98.61L1061 107.27M1083.71 111.01L1080.49 114.84M1098.99 126.29L1095.16 129.51M1111.39 144L1102.73 149M1120.52 163.59L1115.82 165.3M1126.12 184.47L1121.19 185.34" stroke="#f5a524" stroke-opacity=".45"/>
-  <text x="1004" y="72" font-size="12" fill="#f5a524" fill-opacity=".7" text-anchor="middle" letter-spacing="2">N</text>
-  <g transform="translate(1004 206)"><g class="sweep"><circle r="124" fill="none"/><path d="M0 0L82.3 -91.41A123 123 0 0 1 89.66 -84.2Z" fill="#f5a524" fill-opacity="0.01"/><path d="M0 0L89.66 -84.2A123 123 0 0 1 96.39 -76.4Z" fill="#f5a524" fill-opacity="0.02"/><path d="M0 0L96.39 -76.4A123 123 0 0 1 102.45 -68.07Z" fill="#f5a524" fill-opacity="0.03"/><path d="M0 0L102.45 -68.07A123 123 0 0 1 107.79 -59.26Z" fill="#f5a524" fill-opacity="0.04"/><path d="M0 0L107.79 -59.26A123 123 0 0 1 112.37 -50.03Z" fill="#f5a524" fill-opacity="0.07"/><path d="M0 0L112.37 -50.03A123 123 0 0 1 116.16 -40.45Z" fill="#f5a524" fill-opacity="0.1"/><path d="M0 0L116.16 -40.45A123 123 0 0 1 119.14 -30.59Z" fill="#f5a524" fill-opacity="0.13"/><path d="M0 0L119.14 -30.59A123 123 0 0 1 121.28 -20.51Z" fill="#f5a524" fill-opacity="0.17"/><path d="M0 0L121.28 -20.51A123 123 0 0 1 122.57 -10.29Z" fill="#f5a524" fill-opacity="0.22"/><path d="M0 0L122.57 -10.29A123 123 0 0 1 123 -0Z" fill="#f5a524" fill-opacity="0.28"/><path d="M0 0H123" stroke="#f5a524" stroke-width="2" stroke-linecap="round"/></g></g>
-  <g style="animation-delay:0.42s" class="blip"><circle class="ping" cx="1060.74" cy="250.33" r="5" fill="none" stroke="#f5a524" style="animation-delay:0.42s"/><circle cx="1060.74" cy="250.33" r="3.5" fill="#f5a524"/></g>
-  <g style="animation-delay:1.64s" class="blip"><circle class="ping" cx="918.35" cy="259.52" r="5" fill="none" stroke="#f5a524" style="animation-delay:1.64s"/><circle cx="918.35" cy="259.52" r="3.5" fill="#f5a524"/></g>
-  <g style="animation-delay:2.58s" class="blip"><circle class="ping" cx="974.45" cy="168.18" r="5" fill="none" stroke="#f5a524" style="animation-delay:2.58s"/><circle cx="974.45" cy="168.18" r="3.5" fill="#f5a524"/></g>
-  <g style="animation-delay:3.38s" class="blip"><circle class="ping" cx="1055.45" cy="129.73" r="5" fill="none" stroke="#f5a524" style="animation-delay:3.38s"/><circle cx="1055.45" cy="129.73" r="3.5" fill="#f5a524"/></g>
-  <circle cx="1004" cy="206" r="3" fill="#f5a524"/>
+  <rect class="cursor" x="56" y="314" width="10.6" height="21" fill="#f5a524" visibility="hidden"><animate attributeName="x" values="56;67.6;79.2;90.8;102.4;114;125.6;137.2;148.8;160.4;172;183.6;195.2;206.8;218.4;230;241.6;253.2;264.8;276.4;288;299.6;311.2;322.8;334.4;346;357.6;369.2;380.8;392.4;404;415.6;427.2;438.8;450.4;462;473.6;485.2;496.8;508.4;520;531.6;543.2;554.8;566.4;578;589.6;601.2;612.8;624.4;636;647.6;659.2;670.8;682.4;694;705.6;717.2;728.8;740.4;752;763.6" begin="4.46s" dur="1.83s" calcMode="discrete" fill="freeze"/><set attributeName="visibility" to="visible" begin="4.46s"/></rect>
 
   <!-- bottom bar -->
-  <rect y="350" width="1200" height="50" fill="#11161d"/>
   <path d="M0 350H1200" stroke="#30363d"/>
   <text x="56" y="380" font-size="13" letter-spacing="3" fill="#8b949e" textLength="507.6" lengthAdjust="spacing">CLEARANCE <tspan fill="#e6edf3">PUBLIC</tspan>  ·  STATUS <tspan fill="#f5a524">ACTIVE</tspan>  ·  LOCATION</text>
   <rect x="571.6" y="366" width="150" height="18" fill="url(#hatch)" stroke="#30363d"/>

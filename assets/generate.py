@@ -41,8 +41,8 @@ BOTTOM_W = len(BOTTOM) * (0.6 * 13 + 3)
 
 # ---------------------------------------------------------------- typing
 LINES = [
-    ("ROLE", "Game developer · Unity 2D strategy"),
-    ("CURRENT OP", "AIA — an intelligence-agency RPG set in 2054"),
+    ("ROLE", "Game developer · autonomous AI agents"),
+    ("LATEST OPS", "Monarchy · New Roots"),
     ("FIELD ASSET", "AIA-Evolve, an AI agent that ships code hourly"),
 ]
 TX = 56            # left margin of typed block
@@ -106,9 +106,18 @@ def typed_block():
     return "\n    ".join(out_defs), "\n  ".join(out_body)
 
 
-# ---------------------------------------------------------------- radar
-RCX, RCY, RR = 1004, 206, 124
-SWEEP_T = 4.0
+# ---------------------------------------------------------------- sonar
+# Full-bleed background sonar: range rings radiate from an origin on the
+# right and the beam sweeps the whole banner, behind all the text.
+RCX, RCY = 1004, 206
+SR = 1060          # beam length, long enough to reach the far corners
+SWEEP_T = 6.0      # seconds per revolution
+RING_STEP = 120
+BEAM_SPAN = 56     # degrees of fading trail behind the beam
+BEAM_MAX = .22     # trail opacity right behind the beam
+# contacts sit in open space so they never light up under text
+BLIPS = [(905, 104), (1094, 122), (1126, 284), (932, 304),
+         (818, 318), (702, 226), (436, 98)]
 
 
 def polar(r, deg):
@@ -122,50 +131,54 @@ def wedge(r, a0, a1):
     return f"M0 0L{f(x0)} {f(y0)}A{r} {r} 0 0 1 {f(x1)} {f(y1)}Z"
 
 
-def radar():
+def sonar():
     p = []
-    # rings + crosshair
-    p.append(f'<circle cx="{RCX}" cy="{RCY}" r="{RR}" fill="url(#scope)" '
-             f'stroke="{AMBER}" stroke-opacity=".55" stroke-width="1.5"/>')
-    for r in (RR * 2 / 3, RR / 3):
-        p.append(f'<circle cx="{RCX}" cy="{RCY}" r="{f(r)}" fill="none" '
-                 f'stroke="{AMBER}" stroke-opacity=".18"/>')
-    p.append(f'<path d="M{RCX - RR} {RCY}H{RCX + RR}M{RCX} {RCY - RR}V{RCY + RR}" '
-             f'stroke="{AMBER}" stroke-opacity=".14"/>')
-    # ticks
+    # range rings, fading with distance
+    for i, r in enumerate(range(RING_STEP, SR, RING_STEP)):
+        op = max(.05, .17 - i * .017)
+        p.append(f'<circle cx="{RCX}" cy="{RCY}" r="{r}" fill="none" '
+                 f'stroke="{AMBER}" stroke-opacity="{f(op)}"/>')
+    # short crosshair and bearing ticks around the origin
+    c = RING_STEP * 1.5
+    p.append(f'<path d="M{f(RCX - c)} {RCY}H{f(RCX + c)}M{RCX} {f(RCY - c)}V{f(RCY + c)}" '
+             f'stroke="{AMBER}" stroke-opacity=".12"/>')
     ticks = []
     for d in range(0, 360, 10):
-        L = 10 if d % 30 == 0 else 5
-        x0, y0 = polar(RR, d)
-        x1, y1 = polar(RR - L, d)
+        L = 9 if d % 30 == 0 else 4
+        x0, y0 = polar(RING_STEP, d)
+        x1, y1 = polar(RING_STEP - L, d)
         ticks.append(f"M{f(x0)} {f(y0)}L{f(x1)} {f(y1)}")
-    p.append(f'<path d="{"".join(ticks)}" stroke="{AMBER}" stroke-opacity=".45"/>')
-    p.append(f'<text x="{RCX}" y="{RCY - RR - 10}" font-size="12" fill="{AMBER}" '
-             f'fill-opacity=".7" text-anchor="middle" letter-spacing="2">N</text>')
-    # sweep (leading edge at 0deg, trail behind it)
-    sw = [f'<circle r="{RR}" fill="none"/>']  # keeps fill-box centred
-    steps = 10
+    p.append(f'<path d="{"".join(ticks)}" stroke="{AMBER}" stroke-opacity=".35"/>')
+    # beam: nested wedges that all end at the leading edge, so opacity builds
+    # toward the beam with no seams between slices
+    sw = [f'<circle r="{SR}" fill="none"/>']  # keeps the fill-box centred
+    steps, prev = 18, 0.0
     for k in range(steps):
-        a0 = -48 + k * 4.8
-        a1 = a0 + 4.8
-        op = 0.015 + (k / (steps - 1)) ** 2 * 0.26
-        sw.append(f'<path d="{wedge(RR - 1, a0, a1)}" fill="{AMBER}" '
-                  f'fill-opacity="{f(op)}"/>')
-    sw.append(f'<path d="M0 0H{RR - 1}" stroke="{AMBER}" stroke-width="2" '
-              f'stroke-linecap="round"/>')
+        target = BEAM_MAX * ((k + 1) / steps) ** 1.7
+        a = 1 - (1 - target) / (1 - prev)
+        prev = target
+        a0 = -BEAM_SPAN * (1 - k / steps)
+        sw.append(f'<path d="{wedge(SR, a0, 0)}" fill="{AMBER}" '
+                  f'fill-opacity="{a:.4f}"/>')
+    sw.append(f'<path d="M0 0H{SR}" stroke="{AMBER}" stroke-opacity=".14" '
+              f'stroke-width="7"/>')
+    sw.append(f'<path d="M0 0H{SR}" stroke="{AMBER}" stroke-opacity=".6" '
+              f'stroke-width="1.5"/>')
     p.append(f'<g transform="translate({RCX} {RCY})"><g class="sweep">'
              + "".join(sw) + "</g></g>")
-    # blips: lit when the sweep passes them
-    for r, deg in ((72, 38), (101, 148), (48, 232), (92, 304)):
-        x, y = polar(r, deg)
+    # contacts light up as the beam passes over them
+    for x, y in BLIPS:
+        deg = math.degrees(math.atan2(y - RCY, x - RCX)) % 360
         delay = f(deg / 360 * SWEEP_T)
         p.append(
             f'<g style="animation-delay:{delay}s" class="blip">'
-            f'<circle class="ping" cx="{f(x)}" cy="{f(y)}" r="5" fill="none" '
+            f'<circle class="ping" cx="{x}" cy="{y}" r="5" fill="none" '
             f'stroke="{AMBER}" style="animation-delay:{delay}s"/>'
-            f'<circle cx="{f(x)}" cy="{f(y)}" r="3.5" fill="{AMBER}"/></g>'
+            f'<circle cx="{x}" cy="{y}" r="3.5" fill="{AMBER}"/></g>'
         )
-    p.append(f'<circle cx="{RCX}" cy="{RCY}" r="3" fill="{AMBER}"/>')
+    p.append(f'<circle cx="{RCX}" cy="{RCY}" r="9" fill="none" stroke="{AMBER}" '
+             f'stroke-opacity=".5"/>')
+    p.append(f'<circle cx="{RCX}" cy="{RCY}" r="3.5" fill="{AMBER}"/>')
     return "\n  ".join(p)
 
 
@@ -221,7 +234,7 @@ def header():
               animation: stamp .45s cubic-bezier(.2, .9, .3, 1.2) .55s both; }}
     .sweep {{ transform-box: fill-box; transform-origin: center;
               animation: spin {f(SWEEP_T)}s linear infinite; }}
-    .blip {{ opacity: .14; animation: blip {f(SWEEP_T)}s ease-out infinite; }}
+    .blip {{ opacity: .1; animation: blip {f(SWEEP_T)}s ease-out infinite; }}
     .ping {{ transform-box: fill-box; transform-origin: center; opacity: 0;
              animation: ping {f(SWEEP_T)}s ease-out infinite; }}
     @keyframes flicker {{
@@ -242,12 +255,12 @@ def header():
       70% {{ opacity: 1; transform: scale(.95); }}
       100% {{ opacity: 1; transform: scale(1); }} }}
     @keyframes spin {{ to {{ transform: rotate(360deg); }} }}
-    @keyframes blip {{ 0% {{ opacity: 1; }} 65%, 100% {{ opacity: .14; }} }}
+    @keyframes blip {{ 0% {{ opacity: .95; }} 65%, 100% {{ opacity: .1; }} }}
     @keyframes ping {{ 0% {{ opacity: .9; transform: scale(.6); }}
                       45%, 100% {{ opacity: 0; transform: scale(3.2); }} }}
     @media (prefers-reduced-motion: reduce) {{
       * {{ animation: none !important; }}
-      .blip {{ opacity: .7; }}
+      .blip {{ opacity: .5; }}
     }}"""
 
     name = "LASUTRIV"
@@ -257,12 +270,8 @@ def header():
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t d">
   <title id="t">LASUTRIV — personnel file</title>
-  <desc id="d">Codename Lasutriv. Role: game developer, Unity 2D strategy. Current op: AIA, an intelligence-agency RPG set in 2054. Field asset: AIA-Evolve, an AI agent that ships code hourly. Status: declassified.</desc>
+  <desc id="d">Codename Lasutriv. Role: game developer working with autonomous AI agents. Latest ops: Monarchy and New Roots. Field asset: AIA-Evolve, an AI agent that ships code hourly. Status: declassified.</desc>
   <defs>{COMMON_DEFS}
-    <radialGradient id="scope" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="{AMBER}" stop-opacity=".10"/>
-      <stop offset="1" stop-color="{AMBER}" stop-opacity=".02"/>
-    </radialGradient>
     <radialGradient id="glow" cx=".5" cy=".5" r=".5">
       <stop offset="0" stop-color="{AMBER}" stop-opacity=".10"/>
       <stop offset="1" stop-color="{AMBER}" stop-opacity="0"/>
@@ -286,12 +295,16 @@ def header():
   <rect width="{W}" height="{H}" fill="url(#bg)"/>
   <rect width="{W}" height="{H}" fill="url(#grid)"/>
   <circle cx="{RCX}" cy="{RCY}" r="260" fill="url(#glow)"/>
+  <rect width="{W}" height="62" fill="#11161d"/>
+  <rect y="{H - 50}" width="{W}" height="50" fill="#11161d"/>
+
+  <!-- background sonar -->
+  {sonar()}
 
   <!-- top bar -->
-  <rect width="{W}" height="62" fill="#11161d"/>
   <path d="M0 62H{W}" stroke="{LINE}"/>
   <circle class="blink" cx="62" cy="36" r="5" fill="{AMBER}"/>
-  <text x="80" y="41" font-size="14" letter-spacing="3" fill="{MUTED}" {tl("DIGIMASTERED WORKS  //  PERSONNEL FILE", 14, 3)}>DIGIMASTERED WORKS  //  PERSONNEL FILE</text>
+  <text x="80" y="41" font-size="14" letter-spacing="3" fill="{MUTED}" {tl("CLASSIFIED ARCHIVE  //  PERSONNEL FILE", 14, 3)}>CLASSIFIED ARCHIVE  //  PERSONNEL FILE</text>
   <text x="{W - 56}" y="41" font-size="14" letter-spacing="3" fill="{MUTED}" text-anchor="end" {tl("FILE 2054-LSV-001", 14, 3)}>FILE 2054-LSV-001</text>
 
   <!-- codename -->
@@ -321,11 +334,7 @@ def header():
   <!-- typed dossier lines -->
   {tbody}
 
-  <!-- radar -->
-  {radar()}
-
   <!-- bottom bar -->
-  <rect y="{H - 50}" width="{W}" height="50" fill="#11161d"/>
   <path d="M0 {H - 50}H{W}" stroke="{LINE}"/>
   <text x="56" y="{H - 20}" font-size="13" letter-spacing="3" fill="{MUTED}" {tl(BOTTOM, 13, 3)}>CLEARANCE <tspan fill="{FG}">PUBLIC</tspan>  ·  STATUS <tspan fill="{AMBER}">ACTIVE</tspan>  ·  LOCATION</text>
   <rect x="{f(56 + BOTTOM_W + 8)}" y="{H - 34}" width="150" height="18" fill="url(#hatch)" stroke="{LINE}"/>
