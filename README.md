@@ -7,7 +7,9 @@
 
 </div>
 
-## 🗂️ Active operations
+<br />
+
+<p><img src="assets/section-operations.svg" width="100%" alt="01 Active operations: case files, Summit Tec games and tools" /></p>
 
 Games and tools in progress at **Summit Tec**, our studio.
 
@@ -15,7 +17,7 @@ Games and tools in progress at **Summit Tec**, our studio.
 <tr>
 <td width="50%" valign="top">
 
-### 👑 Monarchy
+### Monarchy
 
 `UNITY 6` `URP` `LOW-POLY` `KINGDOM BUILDER`
 
@@ -26,7 +28,7 @@ A persistent living kingdom: build settlements, govern a realm, and command armi
 </td>
 <td width="50%" valign="top">
 
-### 🌴 New Roots
+### New Roots
 
 `UNITY 6` `SURVIVAL` `LOCAL CO-OP`
 
@@ -39,7 +41,7 @@ Make a home after a shipwreck. Explore a tropical island, forage and grow food, 
 <tr>
 <td width="50%" valign="top">
 
-### 🕵️ AIA
+### AIA
 
 `UNITY 6` `URP` `LOW-POLY 3D`
 
@@ -48,7 +50,7 @@ Make a home after a shipwreck. Explore a tropical island, forage and grow food, 
 </td>
 <td width="50%" valign="top">
 
-### 🤖 AIA-Evolve
+### AIA-Evolve
 
 `CLAUDE CODE` `GITHUB ACTIONS`
 
@@ -59,7 +61,7 @@ An autonomous AI agent that evolves AIA **around the clock**: reading the backlo
 <tr>
 <td colspan="2" valign="top">
 
-### 🏠 [HomeLife App](https://github.com/Lasutriv/HomeLifePublic)
+### [HomeLife App](https://github.com/Lasutriv/HomeLifePublic)
 
 `DOCKER`
 
@@ -72,15 +74,21 @@ A fully dockerized home management app.
 > [!TIP]
 > **AIA is being built alongside an AI agent.** AIA-Evolve runs on GitHub Actions, picking up backlog issues, implementing the changes, and closing them out, many times a day.
 
-## 🧰 Field kit
+<br />
 
+<p><img src="assets/section-kit.svg" width="100%" alt="02 Field kit: issued equipment" /></p>
+
+<p>
 <img alt="Unity 6 and C#" src="https://img.shields.io/badge/Unity_6_%C2%B7_C%23-161b22?style=for-the-badge&logo=unity&logoColor=f5a524" />
 <img alt="Blender" src="https://img.shields.io/badge/Blender-161b22?style=for-the-badge&logo=blender&logoColor=f5a524" />
 <img alt="Docker" src="https://img.shields.io/badge/Docker-161b22?style=for-the-badge&logo=docker&logoColor=f5a524" />
 <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-161b22?style=for-the-badge&logo=claude&logoColor=f5a524" />
 <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-161b22?style=for-the-badge&logo=githubactions&logoColor=f5a524" />
+</p>
 
-## 📡 Intel report
+<br />
+
+<p><img src="assets/section-intel.svg" width="100%" alt="03 Intel report: GitHub activity" /></p>
 
 <div align="center">
 
@@ -96,13 +104,17 @@ A fully dockerized home management app.
 
 <sub>*Stats and top languages don't count private repositories or every project I've worked on.*</sub>
 
-## 🎞️ Field footage: AIA's early 2D build (2022)
+<br />
+
+<p><img src="assets/section-footage.svg" width="100%" alt="04 Field footage: AIA's early 2D build, 2022" /></p>
 
 https://github.com/Lasutriv/Lasutriv/assets/4943212/94c30bb3-68fa-4a73-a01d-20fc29d1e0cf
 
-## 📫 Establish contact
+<br />
 
-💬 Ask me about **autonomous AI agents in game dev**, **3D low-poly games**, or **dockerized home automation**.<br />
-📨 Reach me by [email](mailto:tannerf1101@yahoo.com).
+<p><img src="assets/section-contact.svg" width="100%" alt="05 Establish contact" /></p>
+
+Ask me about **autonomous AI agents in game dev**, **3D low-poly games**, or **dockerized home automation**.<br />
+Reach me by [email](mailto:tannerf1101@yahoo.com).
 
 <img src="assets/footer.svg" width="100%" alt="End of file" />

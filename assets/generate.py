@@ -380,6 +380,178 @@ def footer():
 """
 
 
+# ---------------------------------------------------------------- sections
+# Section header bars: number, title, classification line and a small
+# animated motif on the right that is unique to each section.
+SH = 88
+MX0, MX1 = 880, 1160   # motif area
+
+
+def motif_ops():
+    """Case board: five file LEDs lighting in sequence."""
+    p, n, w, gap = [], 5, 30, 10
+    x0 = MX1 - n * w - (n - 1) * gap
+    for i in range(n):
+        x = x0 + i * (w + gap)
+        p.append(f'<rect class="led" style="animation-delay:{f(i * .28)}s" x="{x}" y="26" '
+                 f'width="{w}" height="12" rx="2" fill="{AMBER}"/>')
+        p.append(f'<text x="{x + w / 2}" y="59" font-size="12" fill="{DIM}" '
+                 f'text-anchor="middle">{i + 1:02d}</text>')
+    p.append(f'<text x="{x0 - 16}" y="37" font-size="14" letter-spacing="3" fill="{MUTED}" '
+             f'text-anchor="end" {tl("FILES", 14, 3)}>FILES</text>')
+    css = """
+    .led { fill-opacity: .2; animation: led 2.8s ease-out infinite; }
+    @keyframes led { 0% { fill-opacity: 1; } 35%, 100% { fill-opacity: .2; } }"""
+    return "\n  ".join(p), css
+
+
+def motif_kit():
+    """Barcode with a laser sweeping across it."""
+    p, x, k = [], MX0 + 40, 0
+    widths = [2, 1, 3, 1, 1, 2, 4, 1, 2, 1, 3, 2, 1, 1, 4, 2, 1, 3, 1, 2]
+    while x < MX1 - 6:
+        w = widths[k % len(widths)] * 2
+        if k % 2 == 0:
+            p.append(f'<rect x="{x}" y="22" width="{w}" height="36" fill="{FG}" fill-opacity=".72"/>')
+        x += w + 2
+        k += 1
+    p.append(f'<text x="{MX0 + 40}" y="74" font-size="12" letter-spacing="2" fill="{DIM}" '
+             f'{tl("INVENTORY  //  CHECKED", 12, 2)}>INVENTORY  //  CHECKED</text>')
+    p.append(f'<g class="laser"><rect x="{MX0 + 36}" y="16" width="10" height="48" '
+             f'fill="{RED}" fill-opacity=".18"/><rect x="{MX0 + 40}" y="16" width="2" '
+             f'height="48" fill="{RED}"/></g>')
+    span = MX1 - 6 - (MX0 + 40)
+    css = f"""
+    .laser {{ animation: laser 2.2s ease-in-out infinite alternate; }}
+    @keyframes laser {{ to {{ transform: translateX({span}px); }} }}"""
+    return "\n  ".join(p), css
+
+
+def motif_intel():
+    """Oscilloscope trace scrolling through a gridded scope."""
+    bx, by, bw, bh, period = MX0, 16, MX1 - MX0, 56, 70
+    pts, x = [], 0.0
+    while x <= bw + 2 * period:
+        ph = (x % period) / period
+        y = 0.35 * math.sin(ph * 2 * math.pi)
+        if .45 < ph < .5:
+            y += -1.6 * (ph - .45) / .05
+        elif .5 <= ph < .56:
+            y += -1.6 + 2.6 * (ph - .5) / .06
+        elif .56 <= ph < .6:
+            y += 1.0 - 1.0 * (ph - .56) / .04
+        pts.append(f"{f(bx + x)},{f(by + bh / 2 + y * bh * .3)}")
+        x += 2
+    p = [f'<clipPath id="scope"><rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="4"/></clipPath>',
+         f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="4" fill="#000" fill-opacity=".35" '
+         f'stroke="{LINE}"/>',
+         f'<g clip-path="url(#scope)"><rect x="{bx}" y="{by}" width="{bw}" height="{bh}" '
+         f'fill="url(#grid14)"/>'
+         f'<polyline class="trace" points="{" ".join(pts)}" fill="none" stroke="{AMBER}" '
+         f'stroke-width="2" stroke-linejoin="round" filter="url(#phosphor)"/></g>',
+         f'<text x="{bx - 14}" y="49" font-size="14" letter-spacing="3" fill="{MUTED}" '
+         f'text-anchor="end" {tl("SIGNAL", 14, 3)}>SIGNAL</text>']
+    css = f"""
+    .trace {{ animation: trace 1.4s linear infinite; }}
+    @keyframes trace {{ to {{ transform: translateX(-{period}px); }} }}"""
+    defs = (f'<pattern id="grid14" width="14" height="14" patternUnits="userSpaceOnUse">'
+            f'<path d="M14 0H0V14" fill="none" stroke="{AMBER}" stroke-opacity=".12"/></pattern>')
+    return defs + "\n  " + "\n  ".join(p), css
+
+
+def motif_footage():
+    """Film strip running past a blinking REC light."""
+    sx, sy, sw, sh, pitch = MX0, 14, MX1 - MX0, 60, 18
+    run = []
+    for i in range(-6, int(sw / pitch) + 6):
+        x = sx + i * pitch
+        run.append(f'<rect x="{x + 4}" y="{sy + 5}" width="10" height="6" rx="1" fill="#0b1016"/>')
+        run.append(f'<rect x="{x + 4}" y="{sy + sh - 11}" width="10" height="6" rx="1" fill="#0b1016"/>')
+    for i in range(-2, int(sw / (pitch * 5)) + 2):
+        x = sx + i * pitch * 5
+        run.append(f'<rect x="{x + 6}" y="{sy + 15}" width="{pitch * 5 - 12}" height="{sh - 30}" '
+                   f'rx="2" fill="{AMBER}" fill-opacity=".1" stroke="{AMBER}" stroke-opacity=".45"/>')
+    p = [f'<clipPath id="strip"><rect x="{sx}" y="{sy}" width="{sw}" height="{sh}" rx="3"/></clipPath>',
+         f'<g clip-path="url(#strip)"><rect x="{sx}" y="{sy}" width="{sw}" height="{sh}" '
+         f'fill="{MUTED}" fill-opacity=".28"/><g class="reel">' + "".join(run) + '</g></g>',
+         f'<circle class="blink" cx="{sx - 66}" cy="40" r="5" fill="{RED}"/>',
+         f'<text x="{sx - 54}" y="45" font-size="14" letter-spacing="3" fill="{RED}" '
+         f'{tl("REC", 14, 3)}>REC</text>']
+    css = f"""
+    .reel {{ animation: reel 1.6s linear infinite; }}
+    @keyframes reel {{ to {{ transform: translateX(-{pitch * 5}px); }} }}"""
+    return "\n  ".join(p), css
+
+
+def motif_contact():
+    """Transmission: a pinging antenna and a live level meter."""
+    p, n, w, gap = [], 14, 8, 6
+    x0 = MX1 - n * w - (n - 1) * gap
+    for i in range(n):
+        x = x0 + i * (w + gap)
+        dur = f(.7 + (i * 37 % 9) / 10)
+        p.append(f'<rect class="bar" style="animation-duration:{dur}s;animation-delay:-{f(i * .13)}s" '
+                 f'x="{x}" y="20" width="{w}" height="44" rx="1" fill="{AMBER}"/>')
+    cx = x0 - 52
+    p.append(f'<circle cx="{cx}" cy="42" r="4" fill="{AMBER}"/>')
+    for d in (0, 1):
+        p.append(f'<circle class="wave" style="animation-delay:{d}s" cx="{cx}" cy="42" r="6" '
+                 f'fill="none" stroke="{AMBER}"/>')
+    css = """
+    .bar { transform-box: fill-box; transform-origin: bottom;
+           animation: bar 1s ease-in-out infinite alternate; }
+    @keyframes bar { from { transform: scaleY(.15); } to { transform: scaleY(1); } }
+    .wave { transform-box: fill-box; transform-origin: center; opacity: 0;
+            animation: wave 2s ease-out infinite; }
+    @keyframes wave { 0% { opacity: .9; transform: scale(.6); }
+                      100% { opacity: 0; transform: scale(4.2); } }"""
+    return "\n  ".join(p), css
+
+
+SECTIONS = [
+    ("section-operations", "01", "ACTIVE OPERATIONS", "CASE FILES  //  SUMMIT TEC GAMES AND TOOLS", motif_ops),
+    ("section-kit", "02", "FIELD KIT", "ISSUED EQUIPMENT  //  TOOLS OF THE TRADE", motif_kit),
+    ("section-intel", "03", "INTEL REPORT", "SIGNALS INTERCEPTED  //  GITHUB ACTIVITY", motif_intel),
+    ("section-footage", "04", "FIELD FOOTAGE", "RECOVERED REEL  //  AIA, EARLY 2D BUILD, 2022", motif_footage),
+    ("section-contact", "05", "ESTABLISH CONTACT", "CHANNEL OPEN  //  SECURE LINE", motif_contact),
+]
+
+
+def section_header(num, title, sub, motif):
+    body, mcss = motif()
+    css = COMMON_CSS + mcss + """
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }"""
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 {W} {SH}" width="{W}" height="{SH}" role="img" aria-labelledby="t">
+  <title id="t">{num} {esc(title.title())}</title>
+  <defs>{COMMON_DEFS}
+    <clipPath id="panel"><rect width="{W}" height="{SH}" rx="10"/></clipPath>
+    <filter id="phosphor" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>{css}
+  </style>
+  <g clip-path="url(#panel)">
+  <rect width="{W}" height="{SH}" fill="url(#bg)"/>
+  <rect width="{W}" height="{SH}" fill="url(#grid)"/>
+  <rect width="6" height="{SH}" fill="{AMBER}"/>
+  <text x="34" y="58" font-size="36" font-weight="800" fill="{AMBER}" filter="url(#phosphor)" {tl(num, 36, 2)}>{num}</text>
+  <path d="M106 18V70" stroke="{LINE}"/>
+  <text x="128" y="47" font-size="26" font-weight="800" letter-spacing="5" fill="{FG}" {tl(title, 26, 5)}>{esc(title)}</text>
+  <text x="129" y="71" font-size="14" letter-spacing="3" fill="{MUTED}" {tl(sub, 14, 3)}>{esc(sub)}</text>
+  {body}
+  <rect width="{W}" height="{SH}" fill="url(#scan)"/>
+  {hud_corners(0, 0, W, SH, L=10, inset=8, op=".45")}
+  </g>
+  <rect x=".5" y=".5" width="{W - 1}" height="{SH - 1}" rx="9.5" fill="none" stroke="{LINE}"/>
+</svg>
+"""
+
+
 (OUT / "header.svg").write_text(header())
 (OUT / "footer.svg").write_text(footer())
-print("wrote", OUT / "header.svg", OUT / "footer.svg")
+for name, num, title, sub, motif in SECTIONS:
+    (OUT / f"{name}.svg").write_text(section_header(num, title, sub, motif))
+print("wrote", OUT / "header.svg", OUT / "footer.svg",
+      *(OUT / f"{s[0]}.svg" for s in SECTIONS))
