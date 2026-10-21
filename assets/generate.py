@@ -43,7 +43,7 @@ BOTTOM_W = len(BOTTOM) * (0.6 * 13 + 3)
 LINES = [
     ("ROLE", "Game developer · autonomous AI agents"),
     ("LATEST OPS", "Monarchy · New Roots"),
-    ("FIELD ASSET", "AIA-Evolve, an AI agent that ships code hourly"),
+    ("FIELD ASSET", "AIA-Evolve, an AI agent that ships code 24/7"),
 ]
 TX = 56            # left margin of typed block
 TY0 = 262          # first baseline
@@ -270,7 +270,7 @@ def header():
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t d">
   <title id="t">LASUTRIV — personnel file</title>
-  <desc id="d">Codename Lasutriv. Role: game developer working with autonomous AI agents. Latest ops: Monarchy and New Roots. Field asset: AIA-Evolve, an AI agent that ships code hourly. Status: declassified.</desc>
+  <desc id="d">Codename Lasutriv. Role: game developer working with autonomous AI agents. Latest ops: Monarchy and New Roots. Field asset: AIA-Evolve, an AI agent that ships code around the clock. Studio: Summit Tec. Status: declassified.</desc>
   <defs>{COMMON_DEFS}
     <radialGradient id="glow" cx=".5" cy=".5" r=".5">
       <stop offset="0" stop-color="{AMBER}" stop-opacity=".10"/>
@@ -304,7 +304,7 @@ def header():
   <!-- top bar -->
   <path d="M0 62H{W}" stroke="{LINE}"/>
   <circle class="blink" cx="62" cy="36" r="5" fill="{AMBER}"/>
-  <text x="80" y="41" font-size="14" letter-spacing="3" fill="{MUTED}" {tl("CLASSIFIED ARCHIVE  //  PERSONNEL FILE", 14, 3)}>CLASSIFIED ARCHIVE  //  PERSONNEL FILE</text>
+  <text x="80" y="41" font-size="14" letter-spacing="3" fill="{MUTED}" {tl("SUMMIT TEC  //  PERSONNEL FILE", 14, 3)}>SUMMIT TEC  //  PERSONNEL FILE</text>
   <text x="{W - 56}" y="41" font-size="14" letter-spacing="3" fill="{MUTED}" text-anchor="end" {tl("FILE 2054-LSV-001", 14, 3)}>FILE 2054-LSV-001</text>
 
   <!-- codename -->

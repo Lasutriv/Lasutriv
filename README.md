@@ -1,32 +1,58 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Personnel file for codename LASUTRIV, stamped DECLASSIFIED, over a sonar sweep. Role: game developer working with autonomous AI agents. Latest ops: Monarchy and New Roots. Field asset: AIA-Evolve, an AI agent that ships code hourly." />
+<img src="assets/header.svg" width="100%" alt="Summit Tec personnel file for codename LASUTRIV, stamped DECLASSIFIED, over a sonar sweep. Role: game developer working with autonomous AI agents. Latest ops: Monarchy and New Roots. Field asset: AIA-Evolve, an AI agent that ships code around the clock." />
 
+<img alt="Studio: Summit Tec" src="https://img.shields.io/badge/Studio-Summit_Tec-f5a524?style=for-the-badge&labelColor=161b22" />
 <a href="mailto:tannerf1101@yahoo.com"><img alt="Comms: email me" src="https://img.shields.io/badge/Comms-Email_me-f5a524?style=for-the-badge&labelColor=161b22" /></a>
-<a href="https://github.com/DigiMastered-Works-LLC/ai-aia-source/wiki/Evolution-Log"><img alt="Intel: AIA-Evolve log" src="https://img.shields.io/badge/Intel-AIA--Evolve_log-f5a524?style=for-the-badge&labelColor=161b22" /></a>
 
 </div>
 
 ## 🗂️ Active operations
 
+Games and tools in progress at **Summit Tec**, our studio.
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🎮 AIA
+### 👑 Monarchy
 
-`UNITY 6` `URP` `C#`
+`UNITY 6` `URP` `LOW-POLY` `KINGDOM BUILDER`
 
-A 3D low-poly strategy/RPG set in **2054**. Direct an intelligence agency in a post-catastrophe world with Cold War espionage aesthetics.
+A persistent living kingdom: build settlements, govern a realm, and command armies of individually animated low-poly soldiers in one continuous world.
+
+<sub>Latest major game · working title</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 🤖 [AIA-Evolve](https://github.com/DigiMastered-Works-LLC/ai-aia-source/wiki)
+### 🌴 New Roots
+
+`UNITY 6` `SURVIVAL` `LOCAL CO-OP`
+
+Make a home after a shipwreck. Explore a tropical island, forage and grow food, cook, craft tools, and build a campsite, alone or with a friend.
+
+<sub>Latest major game · in development</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🕵️ AIA
+
+`UNITY 6` `URP` `LOW-POLY 3D`
+
+*Administrative Intelligence Agency*: an intelligence-agency management sim set in **2054**. As the Director, command agents, facilities, and diplomacy across a living world that keeps acting and reacting.
+
+</td>
+<td width="50%" valign="top">
+
+### 🤖 AIA-Evolve
 
 `CLAUDE CODE` `GITHUB ACTIONS`
 
-An autonomous AI agent that evolves AIA **every hour**: reading the backlog, writing C#, validating, committing, and publishing wiki updates without human intervention.
+An autonomous AI agent that evolves AIA **around the clock**: reading the backlog, writing C#, validating, committing, and documenting its work without human intervention.
 
 </td>
 </tr>
@@ -44,11 +70,12 @@ A fully dockerized home management app.
 </table>
 
 > [!TIP]
-> **AIA is being built by an AI agent.** AIA-Evolve runs on GitHub Actions, and anyone can steer it: file an issue labeled `agent-input` and the bot picks it up, implements the change, and closes the issue. [Watch it work →](https://github.com/DigiMastered-Works-LLC/ai-aia-source/wiki/Evolution-Log)
+> **AIA is being built alongside an AI agent.** AIA-Evolve runs on GitHub Actions, picking up backlog issues, implementing the changes, and closing them out, many times a day.
 
 ## 🧰 Field kit
 
 <img alt="Unity 6 and C#" src="https://img.shields.io/badge/Unity_6_%C2%B7_C%23-161b22?style=for-the-badge&logo=unity&logoColor=f5a524" />
+<img alt="Blender" src="https://img.shields.io/badge/Blender-161b22?style=for-the-badge&logo=blender&logoColor=f5a524" />
 <img alt="Docker" src="https://img.shields.io/badge/Docker-161b22?style=for-the-badge&logo=docker&logoColor=f5a524" />
 <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-161b22?style=for-the-badge&logo=claude&logoColor=f5a524" />
 <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-161b22?style=for-the-badge&logo=githubactions&logoColor=f5a524" />
@@ -69,7 +96,7 @@ A fully dockerized home management app.
 
 <sub>*Stats and top languages don't count private repositories or every project I've worked on.*</sub>
 
-## 🎞️ Field footage: AIA (2022)
+## 🎞️ Field footage: AIA's early 2D build (2022)
 
 https://github.com/Lasutriv/Lasutriv/assets/4943212/94c30bb3-68fa-4a73-a01d-20fc29d1e0cf
 
