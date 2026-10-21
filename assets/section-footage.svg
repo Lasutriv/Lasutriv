@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1200 88" width="1200" height="88" role="img" aria-labelledby="t">
+  <title id="t">04 Field Footage</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1016"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#e6edf3" stroke-opacity=".035"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" fill-opacity=".2"/>
+    </pattern>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5a524" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#f5a524" stop-opacity=".045"/>
+      <stop offset="1" stop-color="#f5a524" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse"
+             patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#020304"/>
+      <rect width="2" height="6" fill="#ffffff" fill-opacity=".04"/>
+    </pattern>
+    <clipPath id="panel"><rect width="1200" height="88" rx="10"/></clipPath>
+    <filter id="phosphor" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace; white-space: pre; }
+    .blink { animation: blink 1.1s steps(1, end) infinite; }
+    .cursor { animation: blink 1s steps(1, end) infinite; }
+    .band { animation: band 7s linear infinite; }
+    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes band { from { transform: translateY(-140px); }
+                      to { transform: translateY(420px); } }
+    .reel { animation: reel 1.6s linear infinite; }
+    @keyframes reel { to { transform: translateX(-90px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <g clip-path="url(#panel)">
+  <rect width="1200" height="88" fill="url(#bg)"/>
+  <rect width="1200" height="88" fill="url(#grid)"/>
+  <rect width="6" height="88" fill="#f5a524"/>
+  <text x="34" y="58" font-size="36" font-weight="800" fill="#f5a524" filter="url(#phosphor)" textLength="47.2" lengthAdjust="spacing">04</text>
+  <path d="M106 18V70" stroke="#30363d"/>
+  <text x="128" y="47" font-size="26" font-weight="800" letter-spacing="5" fill="#e6edf3" textLength="267.8" lengthAdjust="spacing">FIELD FOOTAGE</text>
+  <text x="129" y="71" font-size="14" letter-spacing="3" fill="#8b949e" textLength="513" lengthAdjust="spacing">RECOVERED REEL  //  AIA, EARLY 2D BUILD, 2022</text>
+  <clipPath id="strip"><rect x="880" y="14" width="280" height="60" rx="3"/></clipPath>
+  <g clip-path="url(#strip)"><rect x="880" y="14" width="280" height="60" fill="#8b949e" fill-opacity=".28"/><g class="reel"><rect x="776" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="776" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="794" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="794" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="812" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="812" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="830" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="830" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="848" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="848" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="866" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="866" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="884" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="884" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="902" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="902" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="920" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="920" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="938" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="938" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="956" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="956" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="974" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="974" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="992" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="992" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1010" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1010" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1028" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1028" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1046" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1046" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1064" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1064" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1082" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1082" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1100" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1100" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1118" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1118" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1136" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1136" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1154" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1154" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1172" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1172" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1190" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1190" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1208" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1208" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1226" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1226" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1244" y="19" width="10" height="6" rx="1" fill="#0b1016"/><rect x="1244" y="63" width="10" height="6" rx="1" fill="#0b1016"/><rect x="706" y="29" width="78" height="30" rx="2" fill="#f5a524" fill-opacity=".1" stroke="#f5a524" stroke-opacity=".45"/><rect x="796" y="29" width="78" height="30" rx="2" fill="#f5a524" fill-opacity=".1" stroke="#f5a524" stroke-opacity=".45"/><rect x="886" y="29" width="78" height="30" rx="2" fill="#f5a524" fill-opacity=".1" stroke="#f5a524" stroke-opacity=".45"/><rect x="976" y="29" width="78" height="30" rx="2" fill="#f5a524" fill-opacity=".1" stroke="#f5a524" stroke-opacity=".45"/><rect x="1066" y="29" width="78" height="30" rx="2" fill="#f5a524" fill-opacity=".1" stroke="#f5a524" stroke-opacity=".45"/><rect x="1156" y="29" width="78" height="30" rx="2" fill="#f5a524" fill-opacity=".1" stroke="#f5a524" stroke-opacity=".45"/><rect x="1246" y="29" width="78" height="30" rx="2" fill="#f5a524" fill-opacity=".1" stroke="#f5a524" stroke-opacity=".45"/></g></g>
+  <circle class="blink" cx="814" cy="40" r="5" fill="#f85149"/>
+  <text x="826" y="45" font-size="14" letter-spacing="3" fill="#f85149" textLength="34.2" lengthAdjust="spacing">REC</text>
+  <rect width="1200" height="88" fill="url(#scan)"/>
+  <path d="M8 18V8H18M1182 8H1192V18M1192 70V80H1182M18 80H8V70" fill="none" stroke="#f5a524" stroke-opacity=".45" stroke-width="2"/>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="87" rx="9.5" fill="none" stroke="#30363d"/>
+</svg>
