@@ -1,75 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1200 72" width="1200" height="72" role="img" aria-labelledby="t">
 <title id="t">End of page</title>
 <style>
-.r0 .m{animation:r0-m 3.2s ease-in-out infinite}
+.r0.rotOn .m{animation:r0-m 3.2s ease-in-out infinite}
 @keyframes r0-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r0 *{animation:none!important}}
-.r1 text{ font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace; white-space: pre; }
-.r1 .blink{ animation: r1-blink 1.1s steps(1, end) infinite; }
-.r1 .cursor{ animation: r1-blink 1s steps(1, end) infinite; }
-.r1 .band{ animation: r1-band 7s linear infinite; }
+@media (prefers-reduced-motion: reduce){.r0.rotOn *{animation:none!important}}
+
+.r1 text{font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace;white-space: pre}
+.r1.rotOn .blink{animation: r1-blink 1.1s steps(1, end) infinite}
+.r1.rotOn .cursor{animation: r1-blink 1s steps(1, end) infinite}
+.r1.rotOn .band{animation: r1-band 7s linear infinite}
 @keyframes r1-blink{ 0% { opacity: 1; } 50% { opacity: 0; } }
 @keyframes r1-band{ from { transform: translateY(-140px); }
                       to { transform: translateY(420px); } }
-@media (prefers-reduced-motion: reduce){.r1 *{ animation: none !important; }}
-.r2 .m{animation:r2-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r1.rotOn *{animation: none !important}}
+
+.r2.rotOn .m{animation:r2-m 3.2s ease-in-out infinite}
 @keyframes r2-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r2 *{animation:none!important}}
-.r3 .m{animation:r3-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r2.rotOn *{animation:none!important}}
+
+.r3.rotOn .m{animation:r3-m 3.2s ease-in-out infinite}
 @keyframes r3-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r3 *{animation:none!important}}
-.r4 .m{animation:r4-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r3.rotOn *{animation:none!important}}
+
+.r4.rotOn .m{animation:r4-m 3.2s ease-in-out infinite}
 @keyframes r4-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r4 *{animation:none!important}}
-.r5 .m{animation:r5-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r4.rotOn *{animation:none!important}}
+
+.r5.rotOn .m{animation:r5-m 3.2s ease-in-out infinite}
 @keyframes r5-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r5 *{animation:none!important}}
-.r6 .m{animation:r6-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r5.rotOn *{animation:none!important}}
+
+.r6.rotOn .m{animation:r6-m 3.2s ease-in-out infinite}
 @keyframes r6-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r6 *{animation:none!important}}
-.r7 .m{animation:r7-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r6.rotOn *{animation:none!important}}
+
+.r7.rotOn .m{animation:r7-m 3.2s ease-in-out infinite}
 @keyframes r7-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r7 *{animation:none!important}}
-.r8 .m{animation:r8-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r7.rotOn *{animation:none!important}}
+
+.r8.rotOn .m{animation:r8-m 3.2s ease-in-out infinite}
 @keyframes r8-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r8 *{animation:none!important}}
-.r9 .m{animation:r9-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r8.rotOn *{animation:none!important}}
+
+.r9.rotOn .m{animation:r9-m 3.2s ease-in-out infinite}
 @keyframes r9-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r9 *{animation:none!important}}
-.r10 .m{animation:r10-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r9.rotOn *{animation:none!important}}
+
+.r10.rotOn .m{animation:r10-m 3.2s ease-in-out infinite}
 @keyframes r10-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r10 *{animation:none!important}}
-.r11 .m{animation:r11-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r10.rotOn *{animation:none!important}}
+
+.r11.rotOn .m{animation:r11-m 3.2s ease-in-out infinite}
 @keyframes r11-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r11 *{animation:none!important}}
-.r12 .m{animation:r12-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r11.rotOn *{animation:none!important}}
+
+.r12.rotOn .m{animation:r12-m 3.2s ease-in-out infinite}
 @keyframes r12-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r12 *{animation:none!important}}
-.r13 .m{animation:r13-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r12.rotOn *{animation:none!important}}
+
+.r13.rotOn .m{animation:r13-m 3.2s ease-in-out infinite}
 @keyframes r13-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r13 *{animation:none!important}}
-.r14 .m{animation:r14-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r13.rotOn *{animation:none!important}}
+
+.r14.rotOn .m{animation:r14-m 3.2s ease-in-out infinite}
 @keyframes r14-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r14 *{animation:none!important}}
-.r15 .m{animation:r15-m 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.r14.rotOn *{animation:none!important}}
+
+.r15.rotOn .m{animation:r15-m 3.2s ease-in-out infinite}
 @keyframes r15-m{50%{opacity:.35}}
-@media (prefers-reduced-motion: reduce){.r15 *{animation:none!important}}
+@media (prefers-reduced-motion: reduce){.r15.rotOn *{animation:none!important}}
+
 @font-face{ font-family: 'r16-IBM Plex Mono'; src: url(data:font/woff2;base64,d09GMgABAAAAAAXEABEAAAAAC9gAAAVrAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbHhwuBmAAVAhSCYJzERAKhxyGWQsUAAE2AiQDFAQgBYJIByAMhB4bVwojEXZ6kOom+2dCJveH5dCYikaw7S+1GmtY/Y1EN4y7ch00eyV4nq8r/9xX4GR65BojcCfugD0TQZ18awevgt2vqUBbafV3EHpruhrJXVf+6rZHf8tcCXMJj5yPM8EFLyAgb79tIOMJTEdB3SWldd0N00AlohXdv1XLZndm6QIZoo0aI3AIg3AUQu4eafZDlMQkU5ZRqC+cyMF9cISkKewX7i1CWlR0a4apnXw5AvgAgEJQ2AgCuJQqJeP3aUlsdIB0AAK4tGihdeRe+B7YuZncb8XureQCBl6vq/nhRQaopyOCqdGFstSIMNB2lGc4htJw64EAT5pYpwcSF5iZ/HSNtOgiOcuRNwBKVxEIaIAC1OTSkHR14sDHRqETmChhmpkzCIwvqBm/MP8Xnhvt3/SfpMAI4w200Fh77TTB0+okvGmOPuCnh+BLgimbmPzISq/ky0ym7GAqHV9FfPUpvirEl08wQySIG4LTxa/I8ySSvos13v3hWNpqmQgSA+QXzbI8EVQsSKgSQYuhYK226GNAYAKT2JuggPNmz3ptZGsPOJgFGTBz8aLPT6LiONnpkgNRORH0JbQuRjCTgtfJ+mr5t/wnghE3gLW6LvaQU9rmuCZbKcj5Uhf5krYVUSKYh7RRz+1SOi5ZUTPkA/YCMhAlzg+zwDxd6A8Up8RR21STkUi4JDQqIB4XFpuu1eYiqW69pOCzORMaKUK2+6N0IjhxY4C5tpWiBIKgYeMSY6XTMgFwAMgGDrADvAwAdFA5ACiEr1SO66dn+rkT+Svvmfuk7rnuvM9DkeMPXFf3jAx8UlhWGD2JuCLaLgEFni7LBHFF3xKj311hHtiFcvxhoffM/UJS94b6nrl5dbn7XbnhPn3t0j1I3feAy9eX9l9NHTl98qS1T+rqhcnJ5K6NmzcKT5Hc1DB1YXQqsfCbGYkZvy5MzFsYhYnV30xMTBw5PTnuVM+p7Yxw7dT9UXLH1MTAdw9r2hnt+044Z0WzFx8dwxeVPHb3ljwemSwQL1Y/fvWVPHbZ6MlNL45YcuDOnljvoheb5P7enp0DDYOXGwcQsciRW7KHhqxYyLlFiAlPCO21H1QuC1S2S2wyJab3Z/F+5cmm7JM7OiMOPhlZ2UMZzLJZxjN5kJCuoiF02HzKbu9nzEnkO03u4nkzbaeOx0bDhupvPQYZAf2kQ7dC5IE8oxk0TCyjQ4MHWN9ev+ONJdYqNDLZ094B6LEQt0K8yG8dqAqaNPeFcr+R3d24h6Lc6SFurF/F8TJCACWT+saP5yzLHPGb7WhfAnyeUW1R0nHs/3//f1e98go4KAAEdPn/O6j5HerfBAT7u4iaLwDLLLRQ0n6zDCGAI3/SZAMTAcAFhfYRDQEsFtIQ3QEWejWrE4odrFMMYHOdxggdm/VuZwD5zhTTh4SxpptlszX2m26brbbps8ZOu2woZhvo0qZDh4EIDp+2l8DwBXJuNcca6+yx2Qo7FTomdk4IB9JB42yz3QE7bWBd6+3efH6HToMFzBvgdkrZtgmMsdlmwWD/roJbE9Eat1f8U6u10QAgzQgg2I8J0Swi+KhmiWSgLLqYzniDNauQA+zmiwYQN1CjctkVQThJWGyq4Zrk9zhJMds4PeoUsgmN9XqlnhblOElnlC5NArm03mCWsbrVLnGSSbt65Qr4dJJFpzrV8sRowmaGuBSumXCSQ5MqxXJ4dJLLS/ZZYqwGatljqlE6jvKpVqZAjEvHEskkA6s5xL+4ICIuh+yJOKZ2YzTi2I63ORbcM4T36LzgaOAtvI2b2F5yRgF+5Hbeo0rULmzDadzi0Wo3jnVtV4bgTXRtU9HUs1xlUVdyJvbYSL8F) format('woff2'); }
 @font-face{ font-family: 'r16-IBM Plex Serif'; src: url(data:font/woff2;base64,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) format('woff2'); }
-.r16 text{ font-family: 'r16-IBM Plex Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; white-space: pre; }
-.r16 .disp{ font-family: 'r16-IBM Plex Serif', 'Iowan Old Style', Georgia, serif; }
-.r16 .num{ font-family: 'r16-IBM Plex Serif', 'Iowan Old Style', Georgia, serif; }
-.r16 .blink{ animation: r16-blink 1.1s steps(1, end) infinite; }
-.r16 .cursor{ animation: r16-blink 1s steps(1, end) infinite; }
-.r16 .band{ animation: r16-band 7s linear infinite; }
+.r16 text{font-family: 'r16-IBM Plex Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;white-space: pre}
+.r16 .disp{font-family: 'r16-IBM Plex Serif', 'Iowan Old Style', Georgia, serif}
+.r16 .num{font-family: 'r16-IBM Plex Serif', 'Iowan Old Style', Georgia, serif}
+.r16.rotOn .blink{animation: r16-blink 1.1s steps(1, end) infinite}
+.r16.rotOn .cursor{animation: r16-blink 1s steps(1, end) infinite}
+.r16.rotOn .band{animation: r16-band 7s linear infinite}
 @keyframes r16-blink{ 0% { opacity: 1; } 50% { opacity: 0; } }
 @keyframes r16-band{ from { transform: translateY(-140px); }
                       to { transform: translateY(92px); } }
-@media (prefers-reduced-motion: reduce){.r16 *{ animation: none !important; }}
+@media (prefers-reduced-motion: reduce){.r16.rotOn *{animation: none !important}}
+
 @media (prefers-reduced-motion: reduce){.rot{display:none!important}.rot0{display:inline!important}}
 </style>
 <g id="r0" class="r0 rot rot0">
 <set id="r0t" attributeName="visibility" to="visible" begin="0s; r0t.end+160s" dur="10s"/>
+<set attributeName="class" to="r0 rot rot0 rotOn" begin="r0t.begin" dur="10s"/>
 <set attributeName="display" to="none" begin="r0t.end" dur="160s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r0t.begin"/>
 
@@ -82,6 +100,7 @@
 </g>
 <g id="r1" class="r1 rot" display="none">
 <set id="r1t" attributeName="visibility" to="visible" begin="10s; r1t.end+160s" dur="10s"/>
+<set attributeName="class" to="r1 rot rotOn" begin="r1t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r1t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r1t.begin"/>
 
@@ -121,6 +140,7 @@
 </g>
 <g id="r2" class="r2 rot" display="none">
 <set id="r2t" attributeName="visibility" to="visible" begin="20s; r2t.end+160s" dur="10s"/>
+<set attributeName="class" to="r2 rot rotOn" begin="r2t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r2t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r2t.begin"/>
 
@@ -133,6 +153,7 @@
 </g>
 <g id="r3" class="r3 rot" display="none">
 <set id="r3t" attributeName="visibility" to="visible" begin="30s; r3t.end+160s" dur="10s"/>
+<set attributeName="class" to="r3 rot rotOn" begin="r3t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r3t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r3t.begin"/>
 
@@ -145,6 +166,7 @@
 </g>
 <g id="r4" class="r4 rot" display="none">
 <set id="r4t" attributeName="visibility" to="visible" begin="40s; r4t.end+160s" dur="10s"/>
+<set attributeName="class" to="r4 rot rotOn" begin="r4t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r4t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r4t.begin"/>
 
@@ -157,6 +179,7 @@
 </g>
 <g id="r5" class="r5 rot" display="none">
 <set id="r5t" attributeName="visibility" to="visible" begin="50s; r5t.end+160s" dur="10s"/>
+<set attributeName="class" to="r5 rot rotOn" begin="r5t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r5t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r5t.begin"/>
 
@@ -169,6 +192,7 @@
 </g>
 <g id="r6" class="r6 rot" display="none">
 <set id="r6t" attributeName="visibility" to="visible" begin="60s; r6t.end+160s" dur="10s"/>
+<set attributeName="class" to="r6 rot rotOn" begin="r6t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r6t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r6t.begin"/>
 
@@ -181,6 +205,7 @@
 </g>
 <g id="r7" class="r7 rot" display="none">
 <set id="r7t" attributeName="visibility" to="visible" begin="70s; r7t.end+160s" dur="10s"/>
+<set attributeName="class" to="r7 rot rotOn" begin="r7t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r7t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r7t.begin"/>
 
@@ -193,6 +218,7 @@
 </g>
 <g id="r8" class="r8 rot" display="none">
 <set id="r8t" attributeName="visibility" to="visible" begin="80s; r8t.end+160s" dur="10s"/>
+<set attributeName="class" to="r8 rot rotOn" begin="r8t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r8t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r8t.begin"/>
 
@@ -205,6 +231,7 @@
 </g>
 <g id="r9" class="r9 rot" display="none">
 <set id="r9t" attributeName="visibility" to="visible" begin="90s; r9t.end+160s" dur="10s"/>
+<set attributeName="class" to="r9 rot rotOn" begin="r9t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r9t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r9t.begin"/>
 
@@ -217,6 +244,7 @@
 </g>
 <g id="r10" class="r10 rot" display="none">
 <set id="r10t" attributeName="visibility" to="visible" begin="100s; r10t.end+160s" dur="10s"/>
+<set attributeName="class" to="r10 rot rotOn" begin="r10t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r10t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r10t.begin"/>
 
@@ -229,6 +257,7 @@
 </g>
 <g id="r11" class="r11 rot" display="none">
 <set id="r11t" attributeName="visibility" to="visible" begin="110s; r11t.end+160s" dur="10s"/>
+<set attributeName="class" to="r11 rot rotOn" begin="r11t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r11t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r11t.begin"/>
 
@@ -241,6 +270,7 @@
 </g>
 <g id="r12" class="r12 rot" display="none">
 <set id="r12t" attributeName="visibility" to="visible" begin="120s; r12t.end+160s" dur="10s"/>
+<set attributeName="class" to="r12 rot rotOn" begin="r12t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r12t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r12t.begin"/>
 
@@ -253,6 +283,7 @@
 </g>
 <g id="r13" class="r13 rot" display="none">
 <set id="r13t" attributeName="visibility" to="visible" begin="130s; r13t.end+160s" dur="10s"/>
+<set attributeName="class" to="r13 rot rotOn" begin="r13t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r13t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r13t.begin"/>
 
@@ -265,6 +296,7 @@
 </g>
 <g id="r14" class="r14 rot" display="none">
 <set id="r14t" attributeName="visibility" to="visible" begin="140s; r14t.end+160s" dur="10s"/>
+<set attributeName="class" to="r14 rot rotOn" begin="r14t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r14t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r14t.begin"/>
 
@@ -277,6 +309,7 @@
 </g>
 <g id="r15" class="r15 rot" display="none">
 <set id="r15t" attributeName="visibility" to="visible" begin="150s; r15t.end+160s" dur="10s"/>
+<set attributeName="class" to="r15 rot rotOn" begin="r15t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r15t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r15t.begin"/>
 
@@ -289,6 +322,7 @@
 </g>
 <g id="r16" class="r16 rot" display="none">
 <set id="r16t" attributeName="visibility" to="visible" begin="160s; r16t.end+160s" dur="10s"/>
+<set attributeName="class" to="r16 rot rotOn" begin="r16t.begin" dur="10s"/>
 <set attributeName="display" to="inline" begin="r16t.begin" dur="10s"/>
 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="10s" begin="r16t.begin"/>
 
