@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 44" width="1200" height="44" role="img" aria-labelledby="t">
+<title id="t">End of page</title>
+<style>
+.m{animation:m 3.2s ease-in-out infinite}
+@keyframes m{50%{opacity:.35}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<rect width="1200" height="44" rx="4" fill="#0b3d2e"/>
+<path d="M56 22H556M644 22H1144" stroke="#e9f2ec" stroke-opacity=".5"/>
+<path d="M572 22l5 -5l5 5l-5 5zM628 22l-5 -5l-5 5l5 5z" fill="#e9f2ec" fill-opacity=".7"/>
+<path class="m" d="M600 14l8 8l-8 8l-8 -8z" fill="#5dff8f"/>
+<rect x=".5" y=".5" width="1199" height="43" rx="3.5" fill="none" stroke="#e9f2ec" stroke-opacity=".35"/>
+</svg>
