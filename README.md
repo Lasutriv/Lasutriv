@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Lasutriv/Lasutriv/theme/header.svg" width="100%" alt="Lasutriv, a game developer at Summit Tec working with autonomous AI agents. Latest games: Monarchy and New Roots. AIA-Evolve is an AI agent that ships code around the clock. This banner changes look every day." />
+<img src="assets/rotate/header.svg" width="100%" alt="Lasutriv, a game developer at Summit Tec working with autonomous AI agents. Latest games: Monarchy and New Roots. AIA-Evolve is an AI agent that ships code around the clock. This banner changes look every ten seconds." />
 
 <img alt="Studio: Summit Tec" src="https://img.shields.io/badge/Studio-Summit_Tec-f5a524?style=for-the-badge&labelColor=161b22" />
 <a href="mailto:tannerf1101@yahoo.com"><img alt="Comms: email me" src="https://img.shields.io/badge/Comms-Email_me-f5a524?style=for-the-badge&labelColor=161b22" /></a>
@@ -9,7 +9,7 @@
 
 <br />
 
-<p><img src="https://raw.githubusercontent.com/Lasutriv/Lasutriv/theme/section-operations.svg" width="100%" alt="01 Active operations: Summit Tec games and tools" /></p>
+<p><img src="assets/rotate/section-operations.svg" width="100%" alt="01 Active operations: Summit Tec games and tools" /></p>
 
 Games and tools in progress at **Summit Tec**, our studio.
 
@@ -76,7 +76,7 @@ A fully dockerized home management app.
 
 <br />
 
-<p><img src="https://raw.githubusercontent.com/Lasutriv/Lasutriv/theme/section-kit.svg" width="100%" alt="02 Field kit: tools of the trade" /></p>
+<p><img src="assets/rotate/section-kit.svg" width="100%" alt="02 Field kit: tools of the trade" /></p>
 
 <p>
 <img alt="Unity 6 and C#" src="https://img.shields.io/badge/Unity_6_%C2%B7_C%23-161b22?style=for-the-badge&logo=unity&logoColor=f5a524" />
@@ -88,7 +88,7 @@ A fully dockerized home management app.
 
 <br />
 
-<p><img src="https://raw.githubusercontent.com/Lasutriv/Lasutriv/theme/section-intel.svg" width="100%" alt="03 Intel report: GitHub activity" /></p>
+<p><img src="assets/rotate/section-intel.svg" width="100%" alt="03 Intel report: GitHub activity" /></p>
 
 <div align="center">
 
@@ -106,15 +106,15 @@ A fully dockerized home management app.
 
 <br />
 
-<p><img src="https://raw.githubusercontent.com/Lasutriv/Lasutriv/theme/section-footage.svg" width="100%" alt="04 Field footage: AIA's early 2D build, 2022" /></p>
+<p><img src="assets/rotate/section-footage.svg" width="100%" alt="04 Field footage: AIA's early 2D build, 2022" /></p>
 
 https://github.com/Lasutriv/Lasutriv/assets/4943212/94c30bb3-68fa-4a73-a01d-20fc29d1e0cf
 
 <br />
 
-<p><img src="https://raw.githubusercontent.com/Lasutriv/Lasutriv/theme/section-contact.svg" width="100%" alt="05 Establish contact" /></p>
+<p><img src="assets/rotate/section-contact.svg" width="100%" alt="05 Establish contact" /></p>
 
 Ask me about **autonomous AI agents in game dev**, **3D low-poly games**, or **dockerized home automation**.<br />
 Reach me by [email](mailto:tannerf1101@yahoo.com).
 
-<img src="https://raw.githubusercontent.com/Lasutriv/Lasutriv/theme/footer.svg" width="100%" alt="End of page" />
+<img src="assets/rotate/footer.svg" width="100%" alt="End of page" />
