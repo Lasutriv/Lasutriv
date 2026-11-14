@@ -1,0 +1,83 @@
+name: Profile theme
+
+on:
+  schedule:
+    - cron: "23 5 * * *" # daily
+  workflow_dispatch:
+    inputs:
+      theme:
+        description: "Theme to show now (a folder under assets/themes). Blank shows today's theme."
+        required: false
+        default: ""
+  push:
+    branches: [dev]
+    paths:
+      - assets/themes/**
+      - .github/workflows/theme.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: theme
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: assets/themes
+
+      # One theme a day, by position in rotation.txt. A theme named by hand stays until the next run.
+      - name: Pick the theme
+        id: pick
+        env:
+          REQUESTED: ${{ inputs.theme }}
+        run: |
+          mapfile -t themes < <(sed -e 's/#.*//' -e 's/[[:space:]]*$//' assets/themes/rotation.txt | grep .)
+          if [ "${#themes[@]}" -eq 0 ]; then
+            echo "::error::assets/themes/rotation.txt lists no themes"
+            exit 1
+          fi
+          if [ -n "$REQUESTED" ]; then
+            theme=""
+            for t in "${themes[@]}"; do
+              if [ "$t" = "$REQUESTED" ]; then theme="$t"; fi
+            done
+            if [ -z "$theme" ]; then
+              echo "::error::Unknown theme. Choose one of: ${themes[*]}"
+              exit 1
+            fi
+          else
+            day=$(( $(date -u +%s) / 86400 ))
+            theme="${themes[$(( day % ${#themes[@]} ))]}"
+          fi
+          for f in header footer section-operations section-kit section-intel section-footage section-contact; do
+            if [ ! -s "assets/themes/$theme/$f.svg" ]; then
+              echo "::error::assets/themes/$theme/$f.svg is missing"
+              exit 1
+            fi
+          done
+          echo "theme=$theme" >> "$GITHUB_OUTPUT"
+          echo "Showing **$theme**" >> "$GITHUB_STEP_SUMMARY"
+
+      # README embeds these from raw.githubusercontent.com/<owner>/<repo>/theme/
+      - name: Publish to the theme branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: ${{ steps.pick.outputs.theme }}
+        run: |
+          mkdir dist
+          cp "assets/themes/$THEME"/*.svg dist/
+          echo "$THEME" > dist/theme.txt
+          cd dist
+          git init --quiet --initial-branch=theme
+          git add .
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit --quiet -m "Show theme: $THEME"
+          git push --force --quiet \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" theme

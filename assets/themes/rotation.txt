@@ -1,0 +1,19 @@
+# The profile shows one theme a day, in this order, then starts again.
+# One folder name per line. To keep a single theme, leave only its line.
+field-dossier
+summit-ascent
+neon-arcade
+castaway-chart
+mission-control
+royal-charter
+low-poly-dawn
+paper-dossier
+pixel-quest
+parchment-record
+circuit-trace
+directorate-poster
+observatory
+hazard-protocol
+glass-aurora
+blueprint
+navy-sonar

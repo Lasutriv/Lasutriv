@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1200 88" width="1200" height="88" role="img" aria-labelledby="t">
+<title id="t">03 Intel Report</title>
+<defs><clipPath id="coin"><circle cx="52" cy="44" r="24"/></clipPath><clipPath id="xp"><rect x="880" y="38" width="272" height="12"/></clipPath></defs>
+<style>
+@font-face{font-family:'gf-press-start-2p-400-normal';src:url(data:font/woff2;base64,d09GMgABAAAAAAO8AAwAAAAACZwAAANtAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHCgGYACBHBEICokchl8LMAABNgIkAzAEIAWECgcgG14HEdWboci+TOA2VfisHiFBQLVaNWgnHTZeVD423lNX39Z68b8zOfj/b+7ffeZOXt66M0nexwKCQmRPRlSYGtFVoasqVFQdgWaT1U7NqrnNLBi3hHAJoeYrDIogjOfMV1Xg88xrJ5Tw39JBjlIcwByv43rHywVA/ocD6MlKCt/zi8hgSv7/f7/S+/+kfp5obbChER+RVz/vRG5apEYE6J41q8ClOb7RoEkLmsvczBhGY80amJ/3iABnOtMJGzbtN/TfOPu8owYgAvwXQLRWHwoIb8IRYHt0pE6xWB8BCiBXtLj+6LnhAxN5ai2AtXpNBO+A8GU4eyIGBNDCgxi6YiKvYDw9jJqJLGQJG9nKDvawjwMc4TxXecTT/wKTNjt2SWflB9+FLXpnjZaCEBLwX4T+qwFgBADzgbGgc6C3AEBcqzM56HVRdkHqyXlkzp3BHD32d7pT65j1F+TZe73B7liVfdRUZBoOy+WWlNSQ8ZBIclVBZQqVpY5bDoeVCleDx8ThMsUKBFEZilLpCsWLNCVF51xVZAuaRcHJWGUcXa+QhQhs5vOkpjqYSLjGuDCOw6k7cWxQT6Us3bxVcXluKjlYxlsmv1KHNPhciSuWPaQzcb7ERMsvifaw3nhe3kKiWt0h1pGt/jF9FQncOnQcOL+IDMX4dfSrnszL65cqllPCzyGwmBEOXVcTZ7ah6yEZIxMvXigVNdVHrrQ1jwK2RDSWl7WpkuE5WIywSS3TaN32SKqZgGa9ePSi6bsbLxEKEL1cacCkcHHEZsEoPwbFkd5OrLrnEIFJd6pgCSPuX9cUzR97IlGDePTCYdBQrk5405NSiYdxxnyEKN4HQumvtzwjI0w4TcX1rKwtCIEW4ImEVgQYLD+44ji9rvjaNWsBPs3At3L2o75//H9bO3VYSQBA8KsQxA12QECcrOUl21+2yyd0/vUkAyMmZabmqECXAEqOpVBcAJ+tx8TYfyxQ8z5mrNJjkbm7WMHoitmpb5tgj805zsOlbLd3bd45wVMp+83ZjmTo6Lc6bOnurbARdjboOz6d+f53P87lL+fWLvOivWFGtiSIU1+90+3hKXLYLZDRhswxwV5bzxUNe/XeFcZgo038IRJnTmxaU312tYFA2iE+AZ0PnO1zLE4aox05U9p1dk3avWQKyPe/egA=) format('woff2')}
+@font-face{font-family:'gf-vt323-400-normal';src:url(data:font/woff2;base64,d09GMgABAAAAAAWgAA4AAAAAGZwAAAVKAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhwbHhyBSgZgAIEcEQgKp3ifPQs2AAE2AiQDaAQgBYJwByAbNhRRlC3KZWQ/E0y3GaR/qis2kalot3BzGUTuIPMOh/s9eOjnyveTHACnnOMcEOcQqKhQ7U5lNdmqzrkiCQmo2iUgb79bMhtSd12z6bhABhJn0e4iSi2xDZ7TrckOdj1g41DOjVEULfbWzP9wAL///f5X352z7uo/RIFE+qGSiJHFlXk+qCQxubOPPJOEZy1RPRQPhRAJiWidY21ateRWCTjhtM987TkI4AgAJG+hK8GdNzEL9gI/RpTC8jpsKQCLJYAzP+Yu0hs39e65CZyB1dZSoJK719SppNa75c5MbMt5flirKVM5DYslQcEplmMpFu0gHW/VJ3vHSE5MrIkw55dUgSAZYTDyYYUVx13KO96WYE2y97hSwrAeiBWkR2oCyk6PFgexvgGskmhZ4bPW18ZKHqFajqolGZTMN5V4AcSQdEAlAwnmvCeZ+L6KIyCYK5kzlS5OgRLlDDXqNOk1bMHynMGLiuLKqJvm/hX2e80mg16nVclFQn6C9d0EMeUCwB9APDgFmwtsPsAZOJItxkYyoio/Jmoa4vVTKgSxDk5kpu3lShnube7pO/myZq/YR0ZmR0YYY/YREfaqfeN1W76siuG+kCO2fcyUq2Ub/13ykVMzFNIVTIAj6Cetsokjg1gHYnrNCgKUgh38UYSlVyA/Cd8aV242FIKsTY8yQsACfnjQslvN3wrangzti+3XvRP4RwpSlpjm6wIhe4nCBlbJudGl6n4hdfkTf4wGct0KWQTUxEjQ2qpIGqkCdpdbOxiUGhdr4srLrjbQYON8dOxldK3S+pc+RerZ2yO9JxddO2LJ9DhHuUbXRR7aLajaFse4SSxTScdefK+m7O/NZNEDD25FBlSXwcllV2UncIjsWYcFp/Qhu/R+2yy9cTckK8c+qtELNMuqRJgdmGOHNkVVVuWSjvfH1Exfs3x9dFY1w3190318s0z5JsLnLYxG36esqlnVEzHRIGH6RU5sMmRprbNoLqWi9J2XGX3CgazDQOhp/mi3Ogyp7mZrB+FVJaF0yCQ9oXRormbUH4ovurYGOSlpNRYo2Gh2ASdW7YslGIxmyRd3K0tRbBczds4k+J2YxZIUk7VXJTR2R5biWt/XKxk1kyhMdRq+8lMbByiw28xgVdqO4ByEy3YFkKekXyh4XQkizcsZnXKZ0W/60kOYTqkuQTk7xnklT4WoOaJd0L0YgmmeORvE6aX1hA2MahBtcCYgZou05J4u97g3fneweo1aYUaAaLD+p+v0oPXp2SIxd/49zFpKrsugaQbynnn0jLMD05dCra81zYjdjZHf/XLb3jryskQns6rqlGMxQNePLJk5u43bXXrfoHSv2VLw+LOHj3hM4LHfbtCCPFF7dPH8sZtBJMzByrBaWiIjhIbk7CBykH/f9L6Rvqp30XGas2CXTD68NudZe6zEftv50JLVN3ldSaNBIxsNO41FTfqASdjLoOjhLF9M0V9+TDlwmhuQ+QUbQEU5RJF0BJCQcY+UJ0//DeT4A17cmcgAL09f+vx/TBax4grYkAAI/LNYJUZc+vGfgqo/Ssai8visdD16mlRuk438o9xfKRkWRwL4e4e1x9gW4eNkAthoIRNLAlvcuC0W7F1eLHG2sVimq1ys8BcfWcX+kfX/CQ3qxIkVJ1KNfoPmjek2o0G/GbOGTZqgihVFp9Pll6Yy/6eVpl6ZRpXS1OuHoszz80yasmzGsEFD5rAX6mLEiKDeOaSfWoiKYR4/aUS/Xtnzc8ybM2SyAuerNFP6zVVoS5QhxPPHZJs0bPTwG0XpNWlcKBkAlr1igbAFAAAA) format('woff2')}
+text{white-space:pre}
+.gl{animation:gl 6s steps(24,end) 1s infinite}
+@keyframes gl{0%{transform:translateX(0)}20%,100%{transform:translateX(96px)}}
+.xc{transform:translateX(96px);animation:xc 8s infinite}
+@keyframes xc{0%{transform:translateX(0);animation-timing-function:steps(17,end)}85%,99.99%{transform:translateX(272px);animation-timing-function:steps(1,end)}100%{transform:translateX(0)}}
+.s1{opacity:0;animation:s1 8s steps(1,end) infinite}
+@keyframes s1{85%{opacity:1}90%{opacity:0}95%{opacity:1}}
+.s2{opacity:0;animation:s2 8s steps(1,end) infinite}
+@keyframes s2{90%{opacity:1}95%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<g shape-rendering="crispEdges">
+
+<path d="M4 0h1192v4h4v80h-4v4h-1192v-4h-4v-80h4z" fill="#f4f1ff"/>
+<rect x="4" y="4" width="1192" height="80" fill="#10163a"/>
+<path fill-rule="evenodd" d="M8 8h1184v72h-1184zM12 12v64h1176v-64z" fill="#4a55b8"/>
+<path d="M40 16h24v4h-24zM36 20h32v4h-32zM32 24h40v4h-40zM28 28h48v4h-48zM24 32h56v4h-56zM24 36h56v4h-56zM24 40h56v4h-56zM24 44h56v4h-56zM24 48h56v4h-56zM24 52h56v4h-56zM28 56h48v4h-48zM32 60h40v4h-40zM36 64h32v4h-32zM40 68h24v4h-24z" fill="#b87a00"/><path d="M44 20h16v4h-16zM36 24h32v4h-32zM32 28h40v4h-40zM32 32h40v4h-40zM28 36h48v4h-48zM28 40h48v4h-48zM28 44h48v4h-48zM28 48h48v4h-48zM32 52h40v4h-40zM32 56h40v4h-40zM36 60h32v4h-32zM44 64h16v4h-16z" fill="#ffd447"/>
+<path d="M40 24h16v4h-16zM36 28h8v4h-8zM32 32h4v8h-4z" fill="#fff3a8"/>
+<path d="M48 60h16v4h-16zM60 56h8v4h-8zM68 48h4v8h-4z" fill="#e0a51e"/>
+<g clip-path="url(#coin)"><path class="gl" d="M8 20h8v4h-8zM4 24h8v4h-8zM0 28h8v4h-8zM-4 32h8v4h-8zM-8 36h8v4h-8zM-12 40h8v4h-8zM-16 44h8v4h-8zM-20 48h8v4h-8zM-24 52h8v4h-8zM-28 56h8v4h-8zM-32 60h8v4h-8zM-36 64h8v4h-8z" fill="#fff" fill-opacity=".8"/></g>
+<text x="37" y="53" font-family="'gf-press-start-2p-400-normal', monospace" font-size="16" fill="#6b3a00">03</text>
+<text transform="translate(3 3)" x="104" y="47" font-family="'gf-press-start-2p-400-normal', monospace" font-size="24" fill="#27318a">INTEL REPORT</text>
+<text x="104" y="47" font-family="'gf-press-start-2p-400-normal', monospace" font-size="24" fill="#f4f1ff">INTEL REPORT</text>
+<text x="105" y="70" font-family="'gf-vt323-400-normal', monospace" font-size="24" fill="#4dd6ff">GitHub activity</text>
+<text x="860" y="52" font-family="'gf-press-start-2p-400-normal', monospace" font-size="16" fill="#ffd447" text-anchor="end">XP</text>
+<path d="M876 34h276v20h-276z" fill="#07041a"/>
+<path fill-rule="evenodd" d="M872 30h284v28h-284zM876 34v20h276v-20z" fill="#4a55b8"/>
+<g clip-path="url(#xp)">
+<path d="M880 44h272" stroke="#ffd447" stroke-width="12" stroke-dasharray="12 4"/>
+<path d="M880 40h272" stroke="#fff3a8" stroke-width="4" stroke-dasharray="12 4"/>
+<g class="xc"><rect x="880" y="38" width="272" height="12" fill="#07041a"/><path d="M880 44h272" stroke="#1d2660" stroke-width="12" stroke-dasharray="12 4"/></g>
+</g>
+<path class="s1" d="M1164 42h4v4h-4zM1156 42h4v4h-4zM1172 42h4v4h-4zM1164 34h4v4h-4zM1164 50h4v4h-4z" fill="#f4f1ff"/>
+<path class="s2" d="M1152 42h4v4h-4zM1176 42h4v4h-4zM1164 30h4v4h-4zM1164 54h4v4h-4zM1156 34h4v4h-4zM1172 34h4v4h-4zM1156 50h4v4h-4zM1172 50h4v4h-4z" fill="#ffd447"/>
+</g>
+</svg>

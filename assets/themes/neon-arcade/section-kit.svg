@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1200 88" width="1200" height="88" role="img" aria-labelledby="t">
+<title id="t">02 Field Kit</title>
+<defs><clipPath id="panel"><rect width="1200" height="88" rx="6"/></clipPath>
+<linearGradient id="strip" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d0221"/><stop offset=".6" stop-color="#150734"/><stop offset=".76" stop-color="#12052c"/><stop offset="1" stop-color="#12052c"/></linearGradient>
+<linearGradient id="tube" x1="98" y1="0" x2="291.56" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff2a6d"/><stop offset=".5" stop-color="#b14dff"/><stop offset="1" stop-color="#05d9e8"/></linearGradient>
+</defs>
+<style>
+@font-face{font-family:'gf-orbitron-700-normal';src:url(data:font/woff2;base64,d09GMgABAAAAAASQAA8AAAAACgwAAAQ1AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGigbgQAcKAZgP1NUQVQqAHQRCAqILIYHCyIAATYCJANABCAFhAoHIBvAB1GUMMqnZF8W8ETEQ3dDqAwVq2hqI7XaabZpI0+gtala7XX7/D9VEI4IE+nw4P9r7j337YY3P5lOVIkc6zpgyajKwhBI+62u7R/7c/T1fXoJRtObUepCms+31v7uvEFE08xJA9+9O/AkmjkaIZrvolp5NDFJrk2seQOC3HYAFjZqYzN0gxZNmrWaCbU8xeReCALwtrxdm5XVGW6TYxL8//9+rr63+ek7XaOHtrbSV8r8/jcRayIGJCKVEglJTKp4CZqIkKgczW3idi/aBpTAHyIQAIBIQUDw6Tp/bliIYSysreN5Tp5u8PCAn0fbffFwgw0e9mxllc3vYEL9jBBW8OYuHS+WMIrnonjNJBJBi8mZICdZvPPmjaKZAQTwN8y75nexjQg2xW10rPYL0U4o7VOoi/5vkhflr1+/fCqRBPq8X9OGHYF+BtLlrqGhB90M39X1kwAYAVStDQADDjSM4KjJcW/16X3OfqqQjKKKupZ+CE74eWU11P2d1r0761atWLZoPinuWhT/VQBqOqCfjoZOKzqd6ADwAMB0McWwxu4ZqFuoQx58FTe1q5Ns1cTxWBE9bx0W5e/+Br4p4Lqee/Lw00WxVCdr2b++l5+Wjb1yoXZHus/HaSkFlZnKY19hpSt87maLX69Q7BU4v3Bseah7Wp4Hm3IMZyZdqDbXcbCmkck3uIVMIQwkPCpGODVsgeoc8qfOklBnGQVVhFqYsy+EQGeey6vYuiOKtTifytKaUwYyEF27YoKcyM2PfIF/myWq10de2/SloxSFfJRwpLTIzd+mlTFdre0x4uYNvapL32DNYJ+LuuhnkI4UdsWUNgv9UfXRbnGVDXyvjdvHOsTy9pEMAPqPleRktQ3+SJx6bMCOTyujbJijfXkHP2/4UQ5FWWyT53zRThwzU7ERH52HaPtIWMfPRyhBNFdCqn7LpdMBTRdx7YWKyp45HOQkrh6pLAlb/IrFsimN+YL76MI1xZbVV3yJPLEYw2OYartlSG6a7DM+PpPeBA9FgqrDt1p4/UOKpp+lPl7g8teXqwEAEACiOLa8EJrjaPy2cuQFgB3SgwDgPjCrU6KYepErAgsiABDg/bvoEXP+80BQLOYkfGlIAmQSF3LFP3S6BcmChAvoiT8kYmv8X0aEEwmRREaY+KshcZBIFCTGNI0OgVqP2SwT7bMZgcwDI9UM+NM/i6X2E5vUj9iZNBV7ndI4YtI4ZrgkBAFWT+Omt4CttY2Hlpu5rYebsxNJ1tnB0hC4uduefTQqRKZSaXA2CvdfUkxTS1NBjD70096O55xdfN1kjKJCNEl4JP0dhhlksLbH/A5YwPsznh42zlpEUSydlR8u7qIUinWiuPE0J1tEjxT7Z4EDMLP2BM5WFGe7mSNCvfFPhuoCd+DmBSyhipDvf0A1zRyBKBQudx1OZlRo+p+mAQAAAA==) format('woff2')}
+@font-face{font-family:'gf-share-tech-mono-400-normal';src:url(data:font/woff2;base64,d09GMgABAAAAAARgAA0AAAAACHAAAAQOAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGx4cLgZgAHQRCAqGaIUZCyIAATYCJAMiBCAFhBoHIBuWBlGUMEok2Z8KNImrdJsHq5roqLGLsQERhoAgYOieGmd2CQ8lVaeZV92OMFr76ue3uRJBtFZWz+w9YRQDOARPYOPCKkIBWpIIOiqK4DRY28CbeDxcEulRsUaE1IjkTLJAyjvlmBJPgqR5omc6+cHe/wDhkqfO8ecawHY+tWiqtFlHLQD+/dh8H/x/8Il53C0h5m1iEj2ZJLOOXt+RZxbplNNdJikwZfn7/fxfTm8QtfwcG/Nfaw4c+3kvwDAL19K1QJfHaYFFaYVXX7kHtJMqlTIEarTHKqzpMzMVCBVQFoivPzsOeV+9pdM15Dt92UEOBFyeU+dIiXQ2Ecy7vXxs5A2QakvVJZICAQAr5tVzYJBKPlRuIB/y7xwC4mu6j844SMhogyPQBtdm0IYYR6EzN6+gmKSMvEq5HIMQkZCGSt/pbpdKIZdJRIX9f4YoqxE0ATqDNuA/MQlAASBJYsb+hLK7Kp+BMWdE3V+BIWjiwYoqthrkrrLhIPFjh8Pj+ntRDZ2sTdK7/AHRcgqUewGq3fWuK3UCTJjOhRrr1j0JhVAJDVOddIx+eQXlhxXtJS439gR/QEmXujpHXl5qpbGrKaTDGVHTA9P/aly+4b0RQLFARMHRQ7bsREYCQDSUY0KqBekV655nGa7Oh4dTFMsWHyVkvXrbUMnszd16Vb81l+HRs7C78rFxrnneNA/NrIVKb/J+vXadyrriuJkoXe756umt2nb9njrtk09/JwKXj6k/xzkjBnU616ZInBFnS3LwZYAEvtl9PWqi9ngWUCMZ2zRFB/QTw59Oyift2HvK1/yRES+Xr7c5a5xLk73L/hjh2H/r0VH51mmzE/Z3sYvWGYnYHRpzaNidvzq0v1RabyitGqYNV5VVjYIv0Gzq9oKFdRX9dyrSQGqtUmm2dPu/2+iKp0qKlAazVQL/3iu6bd3pEBQrPQ59hv6MsXbZ3HZDhoFrewzdT3XPqEh14kf0jjWjYh5RNe5fVimK33pM6QZy90R1bR9X9nPtl+e6hAEQCA+qtanUF43/VpXzZ3jSfQ6ePn74Sfm8ClRKIBhmkmI0gf4Wwv73RWqvAgYomVspeFviLCZmIqxjiYUmH1V64kSGEpDW6LU4oqjGbw9flNDRl5I0OE/JVopUFpxS0paVV/E4BJZZGDqZqpgaW8ja29nnlTd1uqsNza2ZOjlbojfxcHJz8ykx7MbBQt5G5haIN4mEhgkne8vmAEpLRE5Ejk478XLz8KdcTBRN2H6zydPJ0tzCBTEbs6jaedlRXugS3dNBB0WAckFzeqAK5QFUinzReGZ03zu7YIxtjdMYvi1yPzTiZLglFd/d0gV4KX3d1Kn2qNCRWNnoJfHlDG1zWWmqhw8y4QDlNRSEPQAAAA==) format('woff2')}
+text{white-space:pre}
+.buzz{animation:buzz 5.5s steps(1,end) 1.5s infinite}
+@keyframes buzz{0%{opacity:.35}1.5%{opacity:1}3%{opacity:.5}4.5%{opacity:1}52%{opacity:.6}53.5%{opacity:1}}
+.ring{animation:ring 3.4s ease-in-out infinite}
+@keyframes ring{50%{opacity:.55}}
+.ch{animation:chase 1.9s linear infinite}
+@keyframes chase{0%{opacity:.12}6%{opacity:1}62%,100%{opacity:.12}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#panel)">
+<rect width="1200" height="88" fill="url(#strip)"/>
+<circle cx="52" cy="44" r="24" fill="#0d0221" stroke="#05d9e8" stroke-opacity=".2" stroke-width="8"/>
+<circle cx="52" cy="44" r="24" fill="none" stroke="#05d9e8" stroke-opacity=".4" stroke-width="4.5"/>
+<circle class="ring" cx="52" cy="44" r="24" fill="none" stroke="#c9fbff" stroke-width="1.8"/>
+<text x="52" y="50.5" font-family="'gf-orbitron-700-normal', sans-serif" font-size="18" fill="#f7f7ff" text-anchor="middle" letter-spacing="1">02</text>
+<text x="98" y="42" font-family="'gf-orbitron-700-normal', sans-serif" font-size="24" fill="#f7f7ff" letter-spacing="2">FIELD KIT</text>
+<text x="99" y="62" font-family="'gf-share-tech-mono-400-normal', monospace" font-size="13" fill="#05d9e8" fill-opacity=".85" letter-spacing="2.4">TOOLS OF THE TRADE</text>
+<g class="buzz"><path d="M98 74h193.56" stroke="url(#tube)" stroke-opacity=".25" stroke-width="7" stroke-linecap="round"/><path d="M98 74h193.56" stroke="url(#tube)" stroke-width="2.2" stroke-linecap="round"/></g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M946 28l14 16l-14 16M973 28l14 16l-14 16M1000 28l14 16l-14 16M1027 28l14 16l-14 16M1054 28l14 16l-14 16M1081 28l14 16l-14 16M1108 28l14 16l-14 16M1135 28l14 16l-14 16" stroke="#3b1466" stroke-width="3.2"/>
+<g class="ch" style="opacity:0.25;animation-delay:0s" stroke="rgb(255,42,109)"><path d="M946 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M946 28l14 16l-14 16" stroke-width="3.2"/></g>
+<g class="ch" style="opacity:0.36;animation-delay:0.16s" stroke="rgb(233,52,151)"><path d="M973 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M973 28l14 16l-14 16" stroke-width="3.2"/></g>
+<g class="ch" style="opacity:0.46;animation-delay:0.32s" stroke="rgb(210,62,192)"><path d="M1000 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M1000 28l14 16l-14 16" stroke-width="3.2"/></g>
+<g class="ch" style="opacity:0.57;animation-delay:0.48s" stroke="rgb(188,72,234)"><path d="M1027 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M1027 28l14 16l-14 16" stroke-width="3.2"/></g>
+<g class="ch" style="opacity:0.68;animation-delay:0.64s" stroke="rgb(152,97,252)"><path d="M1054 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M1054 28l14 16l-14 16" stroke-width="3.2"/></g>
+<g class="ch" style="opacity:0.79;animation-delay:0.8s" stroke="rgb(103,137,245)"><path d="M1081 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M1081 28l14 16l-14 16" stroke-width="3.2"/></g>
+<g class="ch" style="opacity:0.89;animation-delay:0.96s" stroke="rgb(54,177,239)"><path d="M1108 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M1108 28l14 16l-14 16" stroke-width="3.2"/></g>
+<g class="ch" style="opacity:1;animation-delay:1.12s" stroke="rgb(5,217,232)"><path d="M1135 28l14 16l-14 16" stroke-width="9" stroke-opacity=".22"/><path d="M1135 28l14 16l-14 16" stroke-width="3.2"/></g>
+</g>
+</g>
+<rect x=".5" y=".5" width="1199" height="87" rx="6" fill="none" stroke="#7a04eb"/>
+</svg>
