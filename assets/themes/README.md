@@ -15,8 +15,10 @@ the files as images and the images animate themselves.
 - Each theme gets ten seconds, with a half-second dissolve to the next one, and
   its intro (typing, drawing, stamping) plays again on every turn.
 - All seven images use the same order and timing, so they change look together.
-  Each image starts its clock when the browser loads it, so they can drift apart
-  a little over time.
+  In Chrome they stay in step even when scrolled out of view. Firefox and Safari
+  may pause an image that is off screen. If they do, a header starts on the first
+  look when it scrolls into view, and the page can show different looks at once.
+  That has not been checked in those browsers.
 - The order is [`rotation.txt`](rotation.txt). The first theme is what visitors
   see when the page loads, and what shows if their browser asks for reduced
   motion or cannot play animation.
