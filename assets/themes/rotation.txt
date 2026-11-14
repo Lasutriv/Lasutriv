@@ -1,7 +1,8 @@
-# The profile shows one theme a day, in this order, then starts again.
-# One folder name per line. To keep a single theme, leave only its line.
-field-dossier
+# The profile shows these themes in this order, ten seconds each, then starts again.
+# The first one is what visitors see when the page loads.
+# One folder name per line. Blank lines and lines starting with # are ignored.
 summit-ascent
+field-dossier
 neon-arcade
 castaway-chart
 mission-control
